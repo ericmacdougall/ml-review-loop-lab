@@ -18,15 +18,18 @@ from common import *  # noqa
 
 
 def pick(scores, y, prec=None, rec=None):
-    order = np.argsort(-scores)
+    order = np.argsort(-scores, kind="stable")
     s, yy = scores[order], y[order]
     tp = np.cumsum(yy); k = np.arange(1, len(y) + 1)
-    P, R = tp / k, tp / max(yy.sum(), 1)
+    # A threshold includes ALL equal scores. Evaluating a prefix inside a tied
+    # group claims precision that cannot be realized by any deployed threshold.
+    ends = np.r_[np.flatnonzero(s[:-1] != s[1:]), len(s)-1]
+    P, R = tp[ends] / k[ends], tp[ends] / max(yy.sum(), 1)
     if prec is not None:
         ok = np.where(P >= prec)[0]
-        return float(s[ok.max()]) if len(ok) else float("inf")      # lowest threshold still meeting precision
+        return float(s[ends[ok.max()]]) if len(ok) else float("inf")
     ok = np.where(R >= rec)[0]
-    return float(s[ok.min()]) if len(ok) else float("-inf")         # highest threshold still meeting recall
+    return float(s[ends[ok.min()]]) if len(ok) else float("-inf")
 
 
 def score_at(scores, y, thr):

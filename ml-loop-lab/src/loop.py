@@ -58,27 +58,37 @@ def oracle_hardness(S):
     return h
 
 
-def review(idx, S, hard, rng, policy, noise):
+def reviewer_draws(seed, n):
+    """Common random numbers indexed by item, shared by all selection policies.
+
+    Simulator-only truth/difficulty and these draws never enter select().
+    """
+    rng = np.random.default_rng(seed * 1000 + 91)
+    return dict(r1=rng.integers(0, 3, n), offset=rng.integers(0, 2, n),
+                u1=rng.random(n), u2=rng.random(n), senior=rng.random(n))
+
+
+def review(idx, S, hard, draws, policy, noise):
     """Return (labels, cost_in_votes, disagreement_flags)."""
     y = S["ypool"][idx]
     n = len(idx)
 
     base = np.array(BASE_ERR) * noise
     if policy == "single":
-        r = rng.integers(0, 3, n)
+        r = draws["r1"][idx]
         perr = np.clip(base[r] + HARD_SLOPE * hard[idx] * noise, 0, 0.5)
-        lab = np.where(rng.random(n) < perr, 1 - y, y)
+        lab = np.where(draws["u1"][idx] < perr, 1 - y, y)
         return lab, np.ones(n), np.zeros(n, bool)
     # two distinct junior reviewers
-    r1 = rng.integers(0, 3, n)
-    r2 = (r1 + 1 + rng.integers(0, 2, n)) % 3
+    r1 = draws["r1"][idx]
+    r2 = (r1 + 1 + draws["offset"][idx]) % 3
     v = []
-    for r in (r1, r2):
+    for r, u in ((r1, draws["u1"][idx]), (r2, draws["u2"][idx])):
         perr = np.clip(base[r] + HARD_SLOPE * hard[idx] * noise, 0, 0.5)
-        v.append(np.where(rng.random(n) < perr, 1 - y, y))
+        v.append(np.where(u < perr, 1 - y, y))
     disagree = v[0] != v[1]
     perr_s = np.clip(SENIOR_ERR * noise + HARD_SLOPE * 0.5 * hard[idx] * noise, 0, 0.5)
-    senior = np.where(rng.random(n) < perr_s, 1 - y, y)
+    senior = np.where(draws["senior"][idx] < perr_s, 1 - y, y)
     if policy == "adjudicate":
         lab = np.where(disagree, senior, v[0])
         return lab, 2 + disagree.astype(float), disagree
@@ -158,6 +168,7 @@ def run_one(cfg):
     t0 = time.time()
     S = LOAD
     rng = np.random.default_rng(seed * 1000 + 7)
+    draws = reviewer_draws(seed, len(S["ypool"]))
     hard = HARD
     D, Y = S["D"], S["Y"]
     X = S["Xpool"]
@@ -182,10 +193,12 @@ def run_one(cfg):
         mon = None
         if week >= 2:
             ref = X[:3 * WEEKLY_ARRIVALS]
-            mon = drift_monitor(ref, X[arr], rng) if week > 3 else None
+            # Arrival drift does not depend on model strategy or review labels.
+            # Precompute it once with a separate seed, avoiding 300 repeated CV fits.
+            mon = MONITOR.get(str(week)) if week > 3 else None
         if not frozen:
             pick = select(strategy, model, backlog, X, rng)
-            lab, cost, dis = review(pick, S, hard, rng, policy, noise)
+            lab, cost, dis = review(pick, S, hard, draws, policy, noise)
             backlog = np.setdiff1d(backlog, pick)
             lab_idx += pick.tolist(); lab_y += lab.tolist(); lab_week += [week] * len(pick)
             cum_cost += float(cost.sum())
@@ -220,9 +233,10 @@ def run_one(cfg):
 
 
 def init():
-    global LOAD, HARD
+    global LOAD, HARD, MONITOR
     LOAD = load()
     HARD = oracle_hardness(LOAD)
+    MONITOR = json.load(open(os.path.join(DATA_DIR, "drift_monitor.json")))
 
 
 def configs(suite, seeds, final):

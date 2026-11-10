@@ -8,6 +8,7 @@ import numpy as np
 from PIL import Image, ImageEnhance, ImageFilter
 
 DATASET = "dragonintelligence/CIFAKE-image-dataset"  # mirror of CIFAKE (Bird and Wang 2023); upstream licence MIT, mirror card has no tag
+DATASET_REVISION = "6eebd6090fe3c0d9d44f899a25f0a34e3c2dad31"
 DATA_DIR = os.environ.get("LAB_DATA", "data")
 FAKE_RATE = 0.20          # production-like class imbalance: 20% AI-generated submissions
 WEEKS = 12

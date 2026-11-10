@@ -15,7 +15,7 @@ from common import *  # noqa
 
 rng = np.random.default_rng(0)
 os.makedirs(DATA_DIR, exist_ok=True)
-ds = load_dataset(DATASET)
+ds = load_dataset(DATASET, revision=DATASET_REVISION)
 print(ds)
 feat = ds["train"].features["label"]
 print("label names", feat.names)
