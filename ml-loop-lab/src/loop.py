@@ -225,10 +225,10 @@ def run_one(cfg):
         row["drift"] = metrics(model, Xd, yd, None)
         rows.append(row)
         if week == WEEKS and final:
-            row["scores_clean"] = model.decision_function(Xe).round(4).tolist()
-            row["scores_drift"] = model.decision_function(Xd).round(4).tolist()
-            row["scores_calib"] = model.decision_function(Xc).round(4).tolist()
-            row["scores_calib_drift"] = model.decision_function(D["calib_drift"]).round(4).tolist()
+            row["scores_clean"] = model.decision_function(Xe).tolist()
+            row["scores_drift"] = model.decision_function(Xd).tolist()
+            row["scores_calib"] = model.decision_function(Xc).tolist()
+            row["scores_calib_drift"] = model.decision_function(D["calib_drift"]).tolist()
     return dict(cfg=cfg, rows=rows, secs=time.time() - t0)
 
 
@@ -273,6 +273,8 @@ if __name__ == "__main__":
     a = ap.parse_args()
     seeds = DEV_SEEDS if a.seeds == "dev" else FINAL_SEEDS
     if a.final:
+        from freeze import verify_freeze
+        verify_freeze(DATA_DIR, C_HEAD)
         reg = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "PREREG.md")
         rec = os.path.join(os.path.dirname(reg), "prereg.sha256")
         h = hashlib.sha256(open(reg, "rb").read()).hexdigest()

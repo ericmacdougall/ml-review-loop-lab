@@ -7,6 +7,9 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 import signal_thresholds as signals
 import loop
+from freeze import verify_freeze, validate_runs, sha
+import tempfile
+import json
 
 
 class MethodControls(unittest.TestCase):
@@ -38,6 +41,31 @@ class MethodControls(unittest.TestCase):
                     for w in range(1, loop.WEEKS+1)]
         self.assertEqual(sum(map(len, arrivals)), loop.N_POOL)
         self.assertEqual(len(set.union(*arrivals)), loop.N_POOL)
+
+    def test_freeze_refuses_data_code_and_hyperparameter_changes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root/"data.bin").write_bytes(b"fixed data")
+            (root/"code.py").write_bytes(b"fixed code")
+            manifest = {"settings": {"C_HEAD": 100}, "data": {"data.bin": sha(root/"data.bin")},
+                        "implementation": {"code.py": sha(root/"code.py")}}
+            (root/"frozen_inputs.json").write_text(json.dumps(manifest))
+            verify_freeze(root, 100, root)
+            with self.assertRaises(SystemExit):
+                verify_freeze(root, 1, root)
+            for file in ("data.bin", "code.py"):
+                original = (root/file).read_bytes()
+                (root/file).write_bytes(b"changed")
+                with self.assertRaises(SystemExit):
+                    verify_freeze(root, 100, root)
+                (root/file).write_bytes(original)
+
+    def test_analysis_refuses_incomplete_or_duplicate_seeds(self):
+        with self.assertRaisesRegex(ValueError, "matrix"):
+            validate_runs([])
+        cfg = loop.configs("main", [100], True)[0]
+        with self.assertRaisesRegex(ValueError, "matrix"):
+            validate_runs([{"cfg": cfg}, {"cfg": cfg}])
 
 
 if __name__ == "__main__":

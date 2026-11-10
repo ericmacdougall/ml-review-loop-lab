@@ -22,6 +22,8 @@ os.makedirs(outdir, exist_ok=True)
 runs = []
 for p in sys.argv[2:]:
     runs += [json.loads(l) for l in open(p)]
+from freeze import validate_runs
+validate_runs(runs)
 
 
 def key(r):

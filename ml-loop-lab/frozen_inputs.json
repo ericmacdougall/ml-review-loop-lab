@@ -1,0 +1,28 @@
+{
+  "settings": {
+    "C_HEAD": 100
+  },
+  "data": {
+    "splits.npz": "1c55bc6e2781064d0f544937ed3790b3de58e5c44b2a3771286e278f8d779e77",
+    "emb.npz": "84addc7efc5422198110de8fa0c10bdce1d452190213d89f90c1d877be08e671",
+    "drop.json": "8b1ed7df4273e49402544c0a4f810201768ed8e6e7ba51cf5fa5502a66155f09",
+    "hardness.npy": "80887b7e59fb55816f0827b083d54f436382a5ebeb57841ca7c588455cce6966",
+    "drift_monitor.json": "e6894c6bb08640cd8715caf3923a508723ad0972d96523f50422e39ffc771df8"
+  },
+  "implementation": {
+    "src/signal_thresholds.py": "fd05f7c7a45ec1ad73557ce5ad55fb4648cce31e9a2396d730611f9e6893c549",
+    "src/prepare_run.py": "e7a9a87e6f967dfce5e498fefb9c8a71402baf492239168df9c2cfa71f26919f",
+    "src/analysis.py": "be959374581223dc32781aa2e1a4fd9dcd8493c7d25bd8895ffa95ce24d9aef9",
+    "src/embed.py": "ee8e2eac086cd3e314eaaa77938d2f8ff37d192c27889b4a5d027f2432a40b0d",
+    "src/tune_head.py": "17161b8a3b1e91cc0eab8ed1bbc7adca165c1faef55211c56f195ac029d0224c",
+    "src/dedupe.py": "9fced4777283ac3a2c830def12b9524dac3ecee4e2b67f9a3760768bd182c550",
+    "src/prep_data.py": "fa03bfb50c63324d165d41785f55898d570f33bd384a978f5548e30cd512c06a",
+    "src/common.py": "610ed1b8b3aaf2bf743e97ecb6e63afd66c19fbf7f997c050825865c930f4c8f",
+    "src/loop.py": "f73788d9c3f6c53d96438ed6efcc575662447e9e1c8a3044e4884addb78c9675",
+    "src/tune_on_test.py": "dc04879ffe18291eff3b72a13d794803bf98807a20e30fb94cac2273ebbc6e5f",
+    "src/freeze.py": "6ffb691b550e831d802e4fe89e020db5d84978650fff63a02a76e6b77ac36192",
+    "PREREG.md": "2aae156bbabb53185c2fddad3d3f7e3ffc60d8a58ae3bef76be4407dbf8241d3",
+    "prereg.sha256": "bba59a9639f269dc80defffb8c56d9f0cabba97ea89655a506a2fde067ff31ad",
+    "../requirements.lock": "a116939d13a7232cd47b9a293fc2d37115a4369b809831285c3915b15606fe14"
+  }
+}
