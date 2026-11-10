@@ -1,0 +1,190 @@
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_protocol.py", line 577, in _handle_request
+    resp = await request_handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_app.py", line 563, in _handle
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eric/lab-l/python-ai-backend-lab/bench/mock_server.py", line 35, in stream
+    await resp.write(f"tok{i} ".encode() + b"\n")
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/web_response.py", line 565, in write
+    await self._payload_writer.write(data)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 203, in write
+    self._write_chunked_payload(chunk)
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 123, in _write_chunked_payload
+    self._writelines((chunk_len_pre, chunk, b"\r\n"))
+  File "/home/eric/lab-l/.venv/lib/python3.12/site-packages/aiohttp/http_writer.py", line 114, in _writelines
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport

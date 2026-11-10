@@ -1,0 +1,1075 @@
+{
+  "scope": "microbenchmarks; mock HTTP inference, actual Python work and memory",
+  "hardware": "shared AMD EPYC7502 virtual host,48vCPU,Python3.12.3,GIL enabled",
+  "latency_scope": "client service time after concurrency admission; queue wait before admission excluded",
+  "rss_scope": "fanout parent-process cumulative high-water mark; memory workloads use fresh subprocesses",
+  "gil_wall_seconds": {
+    "py|serial|1": {
+      "n": 10,
+      "mean": 0.8954868253960739,
+      "ci95_mean": [
+        0.8823329071470771,
+        0.9086407436450707
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|threads|1": {
+      "n": 10,
+      "mean": 0.9074305042973719,
+      "ci95_mean": [
+        0.8969934139199228,
+        0.917867594674821
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|threads|2": {
+      "n": 10,
+      "mean": 0.9267232671030797,
+      "ci95_mean": [
+        0.913467452048208,
+        0.9399790821579515
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|threads|4": {
+      "n": 10,
+      "mean": 0.9306594782043248,
+      "ci95_mean": [
+        0.9182878478255079,
+        0.9430311085831418
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|threads|8": {
+      "n": 10,
+      "mean": 0.930438292195322,
+      "ci95_mean": [
+        0.9183197934548633,
+        0.9425567909357808
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|threads|16": {
+      "n": 10,
+      "mean": 0.9303119484044146,
+      "ci95_mean": [
+        0.9214142573721819,
+        0.9392096394366473
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|processes|1": {
+      "n": 10,
+      "mean": 0.9059588745934889,
+      "ci95_mean": [
+        0.8937344431893337,
+        0.9181833059976441
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|processes|2": {
+      "n": 10,
+      "mean": 0.458126419398468,
+      "ci95_mean": [
+        0.45229967775796437,
+        0.4639531610389716
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|processes|4": {
+      "n": 10,
+      "mean": 0.23323448480223305,
+      "ci95_mean": [
+        0.23022275299203526,
+        0.23624621661243084
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|processes|8": {
+      "n": 10,
+      "mean": 0.12012319759815,
+      "ci95_mean": [
+        0.11611546620787239,
+        0.12413092898842762
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "py|processes|16": {
+      "n": 10,
+      "mean": 0.06648915759287774,
+      "ci95_mean": [
+        0.06198065510557533,
+        0.07099766008018014
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|serial|1": {
+      "n": 10,
+      "mean": 1.053770723589696,
+      "ci95_mean": [
+        1.0419267316992427,
+        1.0656147154801494
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|threads|1": {
+      "n": 10,
+      "mean": 1.0630113066930789,
+      "ci95_mean": [
+        1.0494140221506407,
+        1.076608591235517
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|threads|2": {
+      "n": 10,
+      "mean": 0.5363527033827268,
+      "ci95_mean": [
+        0.527245046606743,
+        0.5454603601587106
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|threads|4": {
+      "n": 10,
+      "mean": 0.2692736101045739,
+      "ci95_mean": [
+        0.264503926231004,
+        0.2740432939781438
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|threads|8": {
+      "n": 10,
+      "mean": 0.1375379806908313,
+      "ci95_mean": [
+        0.1347030023330957,
+        0.14037295904856692
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|threads|16": {
+      "n": 10,
+      "mean": 0.07270047630299814,
+      "ci95_mean": [
+        0.07114965653181703,
+        0.07425129607417925
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|processes|1": {
+      "n": 10,
+      "mean": 1.0523429033870344,
+      "ci95_mean": [
+        1.0387300935480916,
+        1.0659557132259772
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|processes|2": {
+      "n": 10,
+      "mean": 0.5313261119998061,
+      "ci95_mean": [
+        0.5203509433097638,
+        0.5423012806898483
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|processes|4": {
+      "n": 10,
+      "mean": 0.2705829099868424,
+      "ci95_mean": [
+        0.26564933720897926,
+        0.2755164827647056
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|processes|8": {
+      "n": 10,
+      "mean": 0.1375883063999936,
+      "ci95_mean": [
+        0.13414491326305328,
+        0.1410316995369339
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "hash|processes|16": {
+      "n": 10,
+      "mean": 0.07480964150745421,
+      "ci95_mean": [
+        0.07045938020968935,
+        0.07915990280521908
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|serial|1": {
+      "n": 10,
+      "mean": 4.021828382194508,
+      "ci95_mean": [
+        4.019429969726696,
+        4.0242267946623205
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|threads|1": {
+      "n": 10,
+      "mean": 4.028577067097649,
+      "ci95_mean": [
+        4.026563095923025,
+        4.030591038272272
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|threads|2": {
+      "n": 10,
+      "mean": 2.015786435897462,
+      "ci95_mean": [
+        2.01451318429948,
+        2.017059687495444
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|threads|4": {
+      "n": 10,
+      "mean": 1.0090003247081767,
+      "ci95_mean": [
+        1.0084652974689332,
+        1.0095353519474202
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|threads|8": {
+      "n": 10,
+      "mean": 0.5069818238029257,
+      "ci95_mean": [
+        0.5051785687570338,
+        0.5087850788488175
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|threads|16": {
+      "n": 10,
+      "mean": 0.263974487001542,
+      "ci95_mean": [
+        0.2637444089490563,
+        0.26420456505402773
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|processes|1": {
+      "n": 10,
+      "mean": 4.020657671109075,
+      "ci95_mean": [
+        4.0194168514319895,
+        4.02189849078616
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|processes|2": {
+      "n": 10,
+      "mean": 2.0110975919116756,
+      "ci95_mean": [
+        2.0101583609807308,
+        2.0120368228426204
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|processes|4": {
+      "n": 10,
+      "mean": 1.0065898529137485,
+      "ci95_mean": [
+        1.0059606043379914,
+        1.0072191014895056
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|processes|8": {
+      "n": 10,
+      "mean": 0.5040641205152496,
+      "ci95_mean": [
+        0.5035632004420163,
+        0.504565040588483
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "io|processes|16": {
+      "n": 10,
+      "mean": 0.2630854264891241,
+      "ci95_mean": [
+        0.2628183021746752,
+        0.26335255080357295
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|serial|1": {
+      "n": 10,
+      "mean": 0.32369086969993077,
+      "ci95_mean": [
+        0.31834531334489413,
+        0.3290364260549674
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|threads|1": {
+      "n": 10,
+      "mean": 0.2777501935895998,
+      "ci95_mean": [
+        0.2548096172709025,
+        0.3006907699082971
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|threads|2": {
+      "n": 10,
+      "mean": 0.13382394339423626,
+      "ci95_mean": [
+        0.12843114706698625,
+        0.13921673972148627
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|threads|4": {
+      "n": 10,
+      "mean": 0.06824691910296679,
+      "ci95_mean": [
+        0.06697096652022085,
+        0.06952287168571274
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|threads|8": {
+      "n": 10,
+      "mean": 0.03912202310166322,
+      "ci95_mean": [
+        0.03739493144496936,
+        0.04084911475835708
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|threads|16": {
+      "n": 10,
+      "mean": 0.030633485713042318,
+      "ci95_mean": [
+        0.028840208707330915,
+        0.03242676271875372
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|processes|1": {
+      "n": 10,
+      "mean": 0.32814683399628847,
+      "ci95_mean": [
+        0.32098919851460916,
+        0.33530446947796777
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|processes|2": {
+      "n": 10,
+      "mean": 0.16482533110538497,
+      "ci95_mean": [
+        0.16222670652343893,
+        0.167423955687331
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|processes|4": {
+      "n": 10,
+      "mean": 0.0871546432026662,
+      "ci95_mean": [
+        0.08337967199769553,
+        0.09092961440763686
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|processes|8": {
+      "n": 10,
+      "mean": 0.04612517920322716,
+      "ci95_mean": [
+        0.044013939983027786,
+        0.04823641842342653
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "numpy|processes|16": {
+      "n": 10,
+      "mean": 0.029896163393277674,
+      "ci95_mean": [
+        0.026502245775358566,
+        0.03329008101119678
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    }
+  },
+  "fanout": {
+    "asyncio|4|thr": {
+      "n": 10,
+      "mean": 69.02099831213407,
+      "ci95_mean": [
+        68.28120416151074,
+        69.7607924627574
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|4|p50": {
+      "n": 10,
+      "mean": 51.34377990034409,
+      "ci95_mean": [
+        51.030028801577785,
+        51.65753099911039
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|4|p99": {
+      "n": 10,
+      "mean": 167.58955721161328,
+      "ci95_mean": [
+        159.637871844229,
+        175.54124257899755
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|4|wall": {
+      "n": 10,
+      "mean": 14.49128951948951,
+      "ci95_mean": [
+        14.335051735084532,
+        14.647527303894487
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|4|cpu": {
+      "n": 10,
+      "mean": 0.3913462000000006,
+      "ci95_mean": [
+        0.36828494511062104,
+        0.41440745488938013
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|16|thr": {
+      "n": 10,
+      "mean": 272.3804713171453,
+      "ci95_mean": [
+        268.13322901491284,
+        276.62771361937774
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|16|p50": {
+      "n": 10,
+      "mean": 50.890665902988985,
+      "ci95_mean": [
+        49.74755472544049,
+        52.03377708053748
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|16|p99": {
+      "n": 10,
+      "mean": 158.74960499349982,
+      "ci95_mean": [
+        151.07115921994276,
+        166.42805076705687
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|16|wall": {
+      "n": 10,
+      "mean": 3.6729032005008775,
+      "ci95_mean": [
+        3.615703773893799,
+        3.730102627107956
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|16|cpu": {
+      "n": 10,
+      "mean": 0.2365653000000002,
+      "ci95_mean": [
+        0.22608015117192892,
+        0.24705044882807148
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|64|thr": {
+      "n": 10,
+      "mean": 958.2555301040329,
+      "ci95_mean": [
+        936.1312879236172,
+        980.3797722844487
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|64|p50": {
+      "n": 10,
+      "mean": 51.34552880190313,
+      "ci95_mean": [
+        50.68812743933368,
+        52.00293016447258
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|64|p99": {
+      "n": 10,
+      "mean": 164.54745120718144,
+      "ci95_mean": [
+        155.36405465029017,
+        173.7308477640727
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|64|wall": {
+      "n": 10,
+      "mean": 1.0445365062041674,
+      "ci95_mean": [
+        1.0205390349227605,
+        1.0685339774855742
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|64|cpu": {
+      "n": 10,
+      "mean": 0.2160069999999996,
+      "ci95_mean": [
+        0.20541361322876037,
+        0.2266003867712388
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|256|thr": {
+      "n": 10,
+      "mean": 2084.273767147476,
+      "ci95_mean": [
+        1948.6697669909063,
+        2219.877767304046
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|256|p50": {
+      "n": 10,
+      "mean": 62.74924400495365,
+      "ci95_mean": [
+        61.91198835024832,
+        63.58649965965898
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|256|p99": {
+      "n": 10,
+      "mean": 182.46476799831726,
+      "ci95_mean": [
+        176.48067655733408,
+        188.44885943930043
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|256|wall": {
+      "n": 10,
+      "mean": 0.48351620450266636,
+      "ci95_mean": [
+        0.45077967850057865,
+        0.5162527305047541
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|256|cpu": {
+      "n": 10,
+      "mean": 0.23280700000000018,
+      "ci95_mean": [
+        0.21872253011494744,
+        0.24689146988505292
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|1024|thr": {
+      "n": 10,
+      "mean": 1313.8658284011615,
+      "ci95_mean": [
+        1085.807383208149,
+        1541.9242735941739
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|1024|p50": {
+      "n": 10,
+      "mean": 300.16216199146584,
+      "ci95_mean": [
+        275.2589439913256,
+        325.06537999160605
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|1024|p99": {
+      "n": 10,
+      "mean": 473.96794900414534,
+      "ci95_mean": [
+        324.9814144085417,
+        622.954483599749
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|1024|wall": {
+      "n": 10,
+      "mean": 0.8210174597043078,
+      "ci95_mean": [
+        0.6226434459540644,
+        1.0193914734545513
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "asyncio|1024|cpu": {
+      "n": 10,
+      "mean": 0.4230690000000004,
+      "ci95_mean": [
+        0.3887620279276138,
+        0.45737597207238706
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|4|thr": {
+      "n": 10,
+      "mean": 68.91354278560759,
+      "ci95_mean": [
+        68.21350923782344,
+        69.61357633339173
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|4|p50": {
+      "n": 10,
+      "mean": 51.47319320240058,
+      "ci95_mean": [
+        51.084799219644474,
+        51.86158718515669
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|4|p99": {
+      "n": 10,
+      "mean": 156.95426849415526,
+      "ci95_mean": [
+        151.00916985181416,
+        162.89936713649635
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|4|wall": {
+      "n": 10,
+      "mean": 14.513581868907204,
+      "ci95_mean": [
+        14.365459528266099,
+        14.66170420954831
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|4|cpu": {
+      "n": 10,
+      "mean": 0.42173630000000056,
+      "ci95_mean": [
+        0.4057915043637012,
+        0.4376810956362999
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|16|thr": {
+      "n": 10,
+      "mean": 270.14996887099903,
+      "ci95_mean": [
+        268.5422241375166,
+        271.75771360448147
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|16|p50": {
+      "n": 10,
+      "mean": 51.63827140349895,
+      "ci95_mean": [
+        51.07477419402673,
+        52.201768612971165
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|16|p99": {
+      "n": 10,
+      "mean": 161.2248838006053,
+      "ci95_mean": [
+        157.10954059193656,
+        165.34022700927406
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|16|wall": {
+      "n": 10,
+      "mean": 3.7018794027972035,
+      "ci95_mean": [
+        3.67973752111675,
+        3.724021284477657
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|16|cpu": {
+      "n": 10,
+      "mean": 0.38571020000000056,
+      "ci95_mean": [
+        0.35709068630694596,
+        0.41432971369305516
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|64|thr": {
+      "n": 10,
+      "mean": 967.3513465879871,
+      "ci95_mean": [
+        951.5878809108,
+        983.1148122651742
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|64|p50": {
+      "n": 10,
+      "mean": 51.48107819259167,
+      "ci95_mean": [
+        50.56339719315577,
+        52.39875919202756
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|64|p99": {
+      "n": 10,
+      "mean": 165.9830974007491,
+      "ci95_mean": [
+        156.56380661397756,
+        175.40238818752064
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|64|wall": {
+      "n": 10,
+      "mean": 1.0342375339998398,
+      "ci95_mean": [
+        1.0172429973570274,
+        1.0512320706426521
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|64|cpu": {
+      "n": 10,
+      "mean": 0.3739702000000008,
+      "ci95_mean": [
+        0.35547334141836756,
+        0.39246705858163405
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|256|thr": {
+      "n": 10,
+      "mean": 1613.377206750049,
+      "ci95_mean": [
+        1509.8703667079483,
+        1716.8840467921498
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|256|p50": {
+      "n": 10,
+      "mean": 54.17202640674077,
+      "ci95_mean": [
+        52.662260787638,
+        55.68179202584354
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|256|p99": {
+      "n": 10,
+      "mean": 170.56932999985293,
+      "ci95_mean": [
+        165.61351256393155,
+        175.5251474357743
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|256|wall": {
+      "n": 10,
+      "mean": 0.6244997986941598,
+      "ci95_mean": [
+        0.5827915759536736,
+        0.6662080214346461
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|256|cpu": {
+      "n": 10,
+      "mean": 0.5594669000000002,
+      "ci95_mean": [
+        0.5305753773194868,
+        0.5883584226805136
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|1024|thr": {
+      "n": 10,
+      "mean": 1487.691770864106,
+      "ci95_mean": [
+        1407.7774983361512,
+        1567.6060433920609
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|1024|p50": {
+      "n": 10,
+      "mean": 52.33552168938331,
+      "ci95_mean": [
+        51.27298454161464,
+        53.398058837151986
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|1024|p99": {
+      "n": 10,
+      "mean": 168.05927429813892,
+      "ci95_mean": [
+        163.34610451550355,
+        172.77244408077428
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|1024|wall": {
+      "n": 10,
+      "mean": 0.6758057615952566,
+      "ci95_mean": [
+        0.6373845652467296,
+        0.7142269579437837
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "threads|1024|cpu": {
+      "n": 10,
+      "mean": 0.6880548000000009,
+      "ci95_mean": [
+        0.6560501487573281,
+        0.7200594512426736
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|4|thr": {
+      "n": 10,
+      "mean": 65.5120206374393,
+      "ci95_mean": [
+        64.09175779131368,
+        66.93228348356493
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|4|p50": {
+      "n": 10,
+      "mean": 52.069033100269735,
+      "ci95_mean": [
+        51.063597867895396,
+        53.074468332644074
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|4|p99": {
+      "n": 10,
+      "mean": 163.64732509828173,
+      "ci95_mean": [
+        157.220931686831,
+        170.07371850973246
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|4|wall": {
+      "n": 10,
+      "mean": 15.276967073202831,
+      "ci95_mean": [
+        14.946578811935316,
+        15.607355334470347
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|4|cpu": {
+      "n": 10,
+      "mean": 0.40515059999999886,
+      "ci95_mean": [
+        0.38082598932095374,
+        0.429475210679044
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|16|thr": {
+      "n": 10,
+      "mean": 238.66622002001537,
+      "ci95_mean": [
+        233.15037283911494,
+        244.1820672009158
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|16|p50": {
+      "n": 10,
+      "mean": 51.200492796488106,
+      "ci95_mean": [
+        50.61449908515693,
+        51.78648650781928
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|16|p99": {
+      "n": 10,
+      "mean": 167.02127418247983,
+      "ci95_mean": [
+        160.49636030362143,
+        173.54618806133823
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|16|wall": {
+      "n": 10,
+      "mean": 4.193917984701693,
+      "ci95_mean": [
+        4.096313480403453,
+        4.2915224889999335
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|16|cpu": {
+      "n": 10,
+      "mean": 0.5801101,
+      "ci95_mean": [
+        0.5542019930160773,
+        0.6060182069839226
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|64|thr": {
+      "n": 10,
+      "mean": 656.3502766723728,
+      "ci95_mean": [
+        624.620589606735,
+        688.0799637380106
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|64|p50": {
+      "n": 10,
+      "mean": 50.870360305998474,
+      "ci95_mean": [
+        50.134646769625114,
+        51.606073842371835
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|64|p99": {
+      "n": 10,
+      "mean": 168.72474218253046,
+      "ci95_mean": [
+        163.43922978791477,
+        174.01025457714616
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|64|wall": {
+      "n": 10,
+      "mean": 1.5302797326003201,
+      "ci95_mean": [
+        1.4513370428746348,
+        1.6092224223260054
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "processes|64|cpu": {
+      "n": 10,
+      "mean": 1.5844704,
+      "ci95_mean": [
+        1.4040860701639997,
+        1.7648547298360004
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    }
+  },
+  "memory_streaming": {
+    "list|secs": {
+      "n": 10,
+      "mean": 2.962526719289599,
+      "ci95_mean": [
+        2.911700461777782,
+        3.013352976801416
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "list|rss_mb": {
+      "n": 10,
+      "mean": 654.0,
+      "ci95_mean": [
+        654.0,
+        654.0
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "gen|secs": {
+      "n": 10,
+      "mean": 2.7177665308001453,
+      "ci95_mean": [
+        2.673986276674812,
+        2.7615467849254784
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "gen|rss_mb": {
+      "n": 10,
+      "mean": 33.5625,
+      "ci95_mean": [
+        30.59341872390245,
+        36.531581276097555
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "batched|secs": {
+      "n": 10,
+      "mean": 2.7666637045098468,
+      "ci95_mean": [
+        2.722749376977897,
+        2.8105780320417963
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "batched|rss_mb": {
+      "n": 10,
+      "mean": 33.5625,
+      "ci95_mean": [
+        30.59341872390245,
+        36.531581276097555
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "stream|ttft_ms": {
+      "n": 10,
+      "mean": 21.989570592995733,
+      "ci95_mean": [
+        21.55808268032292,
+        22.421058505668547
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    },
+    "buffered|ttft_ms": {
+      "n": 10,
+      "mean": 828.600398497656,
+      "ci95_mean": [
+        825.0316081635224,
+        832.1691888317896
+      ],
+      "interval_scope": "variation across ten repeats on one shared host; not fleet or production uncertainty"
+    }
+  },
+  "workloads": {
+    "gil_units_per_cell": 200,
+    "gil_cells": 44,
+    "gil_repeats": 10,
+    "http_calls_per_cell": 1000,
+    "http_cells": 13,
+    "http_repeats": 10,
+    "jsonl_records_per_memory_cell": 1000000,
+    "memory_repeats": 10
+  }
+}

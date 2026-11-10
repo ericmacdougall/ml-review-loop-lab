@@ -15,6 +15,7 @@ import asyncio
 import json
 import os
 import resource
+from pathlib import Path
 import subprocess
 import sys
 import tempfile
@@ -50,7 +51,9 @@ print(json.dumps(dict(secs=time.perf_counter() - t, rss_mb=resource.getrusage(re
 
 
 def make_file(n):
-    path = os.path.join(tempfile.gettempdir(), f"lab_requests_{n}.jsonl")
+    scratch = Path(os.environ.get("LAB_SCRATCH", str(Path(__file__).resolve().parents[1] / "data")))
+    scratch.mkdir(parents=True, exist_ok=True)
+    path = str(scratch / f"lab_requests_{n}.jsonl")
     if not os.path.exists(path):
         with open(path, "w") as f:
             for i in range(n):
@@ -64,6 +67,7 @@ async def ttft(stream):
     t0 = time.perf_counter()
     async with aiohttp.ClientSession() as s:
         async with s.get("http://127.0.0.1:18080/v1/stream") as r:
+            r.raise_for_status()
             if stream:
                 async for _line in r.content:
                     return time.perf_counter() - t0, None
@@ -84,6 +88,9 @@ if __name__ == "__main__":
         for mode in ("list", "gen", "batched"):
             out = subprocess.run([sys.executable, "-c", CHILD, mode, path], capture_output=True, text=True, check=True).stdout
             r = json.loads(out); r.update(mode=mode, rep=rep, kind="mem")
+            q, rem = divmod(a.lines, 997)
+            assert r["total"] == q * 996 * 997 // 2 + rem * (rem - 1) // 2
+            assert r["tenants"] == min(500, a.lines)
             res.append(r)
             print(f"rep{rep} {mode:8s} {r['secs']:.2f}s rss={r['rss_mb']:.0f}MB", flush=True)
         for stream in (True, False):
@@ -91,5 +98,5 @@ if __name__ == "__main__":
             res.append(dict(kind="ttft", mode="stream" if stream else "buffered", ttft_ms=t * 1000, rep=rep))
             print(f"rep{rep} ttft {'stream' if stream else 'buffered'} {t * 1000:.0f} ms", flush=True)
     json.dump(dict(meta=dict(lines=a.lines, file_mb=size, python=sys.version.split()[0], load_start=os.getloadavg()), runs=res), open(a.out, "w"), indent=1)
-    os.remove(path)
+    # Keep the generated workload beside the run so inputs can be inspected.
     print("ok")

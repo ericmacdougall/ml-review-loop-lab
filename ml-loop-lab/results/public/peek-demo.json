@@ -1,0 +1,538 @@
+{
+  "n_draws": 40,
+  "optimism_peek_pick_mean": -0.01926179037044804,
+  "optimism_peek_ci": [
+    -0.03654154638046017,
+    0.004737445114964946
+  ],
+  "optimism_tune_pick_mean": -0.020677415865110883,
+  "optimism_tune_ci": [
+    -0.035563591608656554,
+    -0.00329560331974971
+  ],
+  "heldout_ap_of_peek_pick": 0.9169261852574542,
+  "heldout_ap_of_tune_pick": 0.917408065447658,
+  "heldout_ap_mean_config": 0.8052188391722357,
+  "draws": [
+    {
+      "draw": 0,
+      "peek_pick": {
+        "peek": 0.8976359783490878,
+        "heldout": 0.9198365894370397
+      },
+      "tune_pick": {
+        "tune": 0.9087664719135548,
+        "heldout": 0.9198365894370397
+      },
+      "mean_cfg_heldout": 0.799817343998091,
+      "best_possible_heldout": 0.9198365894370397
+    },
+    {
+      "draw": 1,
+      "peek_pick": {
+        "peek": 0.897756360177428,
+        "heldout": 0.9170276934242985
+      },
+      "tune_pick": {
+        "tune": 0.8982269539330864,
+        "heldout": 0.9123975867307856
+      },
+      "mean_cfg_heldout": 0.7987272080202792,
+      "best_possible_heldout": 0.9170276934242985
+    },
+    {
+      "draw": 2,
+      "peek_pick": {
+        "peek": 0.904806267071265,
+        "heldout": 0.92287545849534
+      },
+      "tune_pick": {
+        "tune": 0.9022934284404502,
+        "heldout": 0.9157070385385768
+      },
+      "mean_cfg_heldout": 0.8182442855538248,
+      "best_possible_heldout": 0.92287545849534
+    },
+    {
+      "draw": 3,
+      "peek_pick": {
+        "peek": 0.8914664958597655,
+        "heldout": 0.9179356005808569
+      },
+      "tune_pick": {
+        "tune": 0.9080322428811578,
+        "heldout": 0.9127094349002102
+      },
+      "mean_cfg_heldout": 0.804292748600498,
+      "best_possible_heldout": 0.9202391876418576
+    },
+    {
+      "draw": 4,
+      "peek_pick": {
+        "peek": 0.8918428788727568,
+        "heldout": 0.9150141836845563
+      },
+      "tune_pick": {
+        "tune": 0.8844576341279773,
+        "heldout": 0.9150141836845563
+      },
+      "mean_cfg_heldout": 0.7987095469368456,
+      "best_possible_heldout": 0.9150141836845563
+    },
+    {
+      "draw": 5,
+      "peek_pick": {
+        "peek": 0.913486728434263,
+        "heldout": 0.9235257092338267
+      },
+      "tune_pick": {
+        "tune": 0.8880567174249482,
+        "heldout": 0.9235257092338267
+      },
+      "mean_cfg_heldout": 0.8124215084929226,
+      "best_possible_heldout": 0.9242055005909381
+    },
+    {
+      "draw": 6,
+      "peek_pick": {
+        "peek": 0.9105802051118357,
+        "heldout": 0.9088217129722126
+      },
+      "tune_pick": {
+        "tune": 0.883634220312655,
+        "heldout": 0.9228872041126548
+      },
+      "mean_cfg_heldout": 0.8107761890384076,
+      "best_possible_heldout": 0.9240849531617517
+    },
+    {
+      "draw": 7,
+      "peek_pick": {
+        "peek": 0.8902961028939498,
+        "heldout": 0.9195484692749725
+      },
+      "tune_pick": {
+        "tune": 0.8972563670870812,
+        "heldout": 0.9230091381304927
+      },
+      "mean_cfg_heldout": 0.817324941077419,
+      "best_possible_heldout": 0.9230091381304927
+    },
+    {
+      "draw": 8,
+      "peek_pick": {
+        "peek": 0.897168294873003,
+        "heldout": 0.9245267919390074
+      },
+      "tune_pick": {
+        "tune": 0.9007001790900591,
+        "heldout": 0.9245267919390074
+      },
+      "mean_cfg_heldout": 0.8182080419821892,
+      "best_possible_heldout": 0.9245267919390074
+    },
+    {
+      "draw": 9,
+      "peek_pick": {
+        "peek": 0.8924680845491741,
+        "heldout": 0.9236159039678317
+      },
+      "tune_pick": {
+        "tune": 0.9090242249343863,
+        "heldout": 0.9123259956341683
+      },
+      "mean_cfg_heldout": 0.8146243930667693,
+      "best_possible_heldout": 0.9236159039678317
+    },
+    {
+      "draw": 10,
+      "peek_pick": {
+        "peek": 0.8927807561285526,
+        "heldout": 0.9211986165499751
+      },
+      "tune_pick": {
+        "tune": 0.8979629467239647,
+        "heldout": 0.9211986165499751
+      },
+      "mean_cfg_heldout": 0.8055863692022095,
+      "best_possible_heldout": 0.922099491995369
+    },
+    {
+      "draw": 11,
+      "peek_pick": {
+        "peek": 0.8902908085410557,
+        "heldout": 0.9154760476786005
+      },
+      "tune_pick": {
+        "tune": 0.889221502125757,
+        "heldout": 0.9117898762132044
+      },
+      "mean_cfg_heldout": 0.8047121041193516,
+      "best_possible_heldout": 0.9160866595995014
+    },
+    {
+      "draw": 12,
+      "peek_pick": {
+        "peek": 0.8979526022847513,
+        "heldout": 0.9218874563857948
+      },
+      "tune_pick": {
+        "tune": 0.9034253383266805,
+        "heldout": 0.9218874563857948
+      },
+      "mean_cfg_heldout": 0.8134277937543047,
+      "best_possible_heldout": 0.9239095593944925
+    },
+    {
+      "draw": 13,
+      "peek_pick": {
+        "peek": 0.8930849532564319,
+        "heldout": 0.9107910266084956
+      },
+      "tune_pick": {
+        "tune": 0.9075782056799785,
+        "heldout": 0.9122380891472673
+      },
+      "mean_cfg_heldout": 0.8081249575228132,
+      "best_possible_heldout": 0.9176188770045102
+    },
+    {
+      "draw": 14,
+      "peek_pick": {
+        "peek": 0.8733821717356877,
+        "heldout": 0.9163900619210053
+      },
+      "tune_pick": {
+        "tune": 0.8940638618835003,
+        "heldout": 0.9163900619210053
+      },
+      "mean_cfg_heldout": 0.7983164022126003,
+      "best_possible_heldout": 0.9163900619210053
+    },
+    {
+      "draw": 15,
+      "peek_pick": {
+        "peek": 0.8920799530099512,
+        "heldout": 0.9192836119676286
+      },
+      "tune_pick": {
+        "tune": 0.9006880131919162,
+        "heldout": 0.9192836119676286
+      },
+      "mean_cfg_heldout": 0.8056296101769248,
+      "best_possible_heldout": 0.9192836119676286
+    },
+    {
+      "draw": 16,
+      "peek_pick": {
+        "peek": 0.9001553095039071,
+        "heldout": 0.9045324725966146
+      },
+      "tune_pick": {
+        "tune": 0.8883107960458859,
+        "heldout": 0.918022126059222
+      },
+      "mean_cfg_heldout": 0.7885219884496433,
+      "best_possible_heldout": 0.9180666958653778
+    },
+    {
+      "draw": 17,
+      "peek_pick": {
+        "peek": 0.902148260288608,
+        "heldout": 0.9078131295708035
+      },
+      "tune_pick": {
+        "tune": 0.8971318989562896,
+        "heldout": 0.9132644081526552
+      },
+      "mean_cfg_heldout": 0.7895258551526058,
+      "best_possible_heldout": 0.9132644081526552
+    },
+    {
+      "draw": 18,
+      "peek_pick": {
+        "peek": 0.8900253919690453,
+        "heldout": 0.9264011346622014
+      },
+      "tune_pick": {
+        "tune": 0.8994580296275538,
+        "heldout": 0.9120871394732264
+      },
+      "mean_cfg_heldout": 0.8163891868050961,
+      "best_possible_heldout": 0.9318588631330789
+    },
+    {
+      "draw": 19,
+      "peek_pick": {
+        "peek": 0.8864381256397719,
+        "heldout": 0.91372790662051
+      },
+      "tune_pick": {
+        "tune": 0.8823786823298052,
+        "heldout": 0.91372790662051
+      },
+      "mean_cfg_heldout": 0.8050564177671246,
+      "best_possible_heldout": 0.91372790662051
+    },
+    {
+      "draw": 20,
+      "peek_pick": {
+        "peek": 0.8887646287057318,
+        "heldout": 0.9157889190143318
+      },
+      "tune_pick": {
+        "tune": 0.8926657282077266,
+        "heldout": 0.9157889190143318
+      },
+      "mean_cfg_heldout": 0.7955353285381189,
+      "best_possible_heldout": 0.9157889190143318
+    },
+    {
+      "draw": 21,
+      "peek_pick": {
+        "peek": 0.9007217205169148,
+        "heldout": 0.9159785753560171
+      },
+      "tune_pick": {
+        "tune": 0.9129234998575264,
+        "heldout": 0.9159785753560171
+      },
+      "mean_cfg_heldout": 0.7930135975917528,
+      "best_possible_heldout": 0.9159785753560171
+    },
+    {
+      "draw": 22,
+      "peek_pick": {
+        "peek": 0.903899925593582,
+        "heldout": 0.9243377593757439
+      },
+      "tune_pick": {
+        "tune": 0.9049234658201745,
+        "heldout": 0.9165952331542059
+      },
+      "mean_cfg_heldout": 0.8123905393832861,
+      "best_possible_heldout": 0.9243377593757439
+    },
+    {
+      "draw": 23,
+      "peek_pick": {
+        "peek": 0.9045435467102538,
+        "heldout": 0.8932341246702634
+      },
+      "tune_pick": {
+        "tune": 0.879966946721859,
+        "heldout": 0.9085048155558805
+      },
+      "mean_cfg_heldout": 0.7978381678173604,
+      "best_possible_heldout": 0.9089792621387386
+    },
+    {
+      "draw": 24,
+      "peek_pick": {
+        "peek": 0.9035390545680757,
+        "heldout": 0.926713270073843
+      },
+      "tune_pick": {
+        "tune": 0.9049239455243907,
+        "heldout": 0.926713270073843
+      },
+      "mean_cfg_heldout": 0.8026963129139452,
+      "best_possible_heldout": 0.926713270073843
+    },
+    {
+      "draw": 25,
+      "peek_pick": {
+        "peek": 0.9004899257254348,
+        "heldout": 0.9106313597401033
+      },
+      "tune_pick": {
+        "tune": 0.9058771812638177,
+        "heldout": 0.9226066814957823
+      },
+      "mean_cfg_heldout": 0.8144551722009964,
+      "best_possible_heldout": 0.9226066814957823
+    },
+    {
+      "draw": 26,
+      "peek_pick": {
+        "peek": 0.8882679926949567,
+        "heldout": 0.9193005575354818
+      },
+      "tune_pick": {
+        "tune": 0.897905922930924,
+        "heldout": 0.9223624892679037
+      },
+      "mean_cfg_heldout": 0.8048563771370109,
+      "best_possible_heldout": 0.9223624892679037
+    },
+    {
+      "draw": 27,
+      "peek_pick": {
+        "peek": 0.9109331833465412,
+        "heldout": 0.9101380221109555
+      },
+      "tune_pick": {
+        "tune": 0.8819536778309465,
+        "heldout": 0.9101380221109555
+      },
+      "mean_cfg_heldout": 0.797144761513374,
+      "best_possible_heldout": 0.9101380221109555
+    },
+    {
+      "draw": 28,
+      "peek_pick": {
+        "peek": 0.9106100333107926,
+        "heldout": 0.9060411004246745
+      },
+      "tune_pick": {
+        "tune": 0.8909363568561194,
+        "heldout": 0.908671785870785
+      },
+      "mean_cfg_heldout": 0.800114254101155,
+      "best_possible_heldout": 0.908671785870785
+    },
+    {
+      "draw": 29,
+      "peek_pick": {
+        "peek": 0.8950396956698943,
+        "heldout": 0.914661278547069
+      },
+      "tune_pick": {
+        "tune": 0.8871336156927999,
+        "heldout": 0.917449351959762
+      },
+      "mean_cfg_heldout": 0.7995674153348592,
+      "best_possible_heldout": 0.917449351959762
+    },
+    {
+      "draw": 30,
+      "peek_pick": {
+        "peek": 0.9051831128724046,
+        "heldout": 0.9214320529009001
+      },
+      "tune_pick": {
+        "tune": 0.9131924078115135,
+        "heldout": 0.9214320529009001
+      },
+      "mean_cfg_heldout": 0.8074170483099813,
+      "best_possible_heldout": 0.9234510142064806
+    },
+    {
+      "draw": 31,
+      "peek_pick": {
+        "peek": 0.8994185162928993,
+        "heldout": 0.9241793667632751
+      },
+      "tune_pick": {
+        "tune": 0.9046700990396612,
+        "heldout": 0.9241793667632751
+      },
+      "mean_cfg_heldout": 0.8152648536433821,
+      "best_possible_heldout": 0.9241793667632751
+    },
+    {
+      "draw": 32,
+      "peek_pick": {
+        "peek": 0.8967441632955712,
+        "heldout": 0.9142459540375515
+      },
+      "tune_pick": {
+        "tune": 0.8826538952510194,
+        "heldout": 0.9087590873493545
+      },
+      "mean_cfg_heldout": 0.7994787512134833,
+      "best_possible_heldout": 0.9142459540375515
+    },
+    {
+      "draw": 33,
+      "peek_pick": {
+        "peek": 0.9049847382905295,
+        "heldout": 0.9226971900016433
+      },
+      "tune_pick": {
+        "tune": 0.8966644834686551,
+        "heldout": 0.9226971900016433
+      },
+      "mean_cfg_heldout": 0.8152473763799034,
+      "best_possible_heldout": 0.9226971900016433
+    },
+    {
+      "draw": 34,
+      "peek_pick": {
+        "peek": 0.8955094634820223,
+        "heldout": 0.9091264502427725
+      },
+      "tune_pick": {
+        "tune": 0.9006242588282657,
+        "heldout": 0.9237242240737554
+      },
+      "mean_cfg_heldout": 0.8238505045308461,
+      "best_possible_heldout": 0.9237242240737554
+    },
+    {
+      "draw": 35,
+      "peek_pick": {
+        "peek": 0.8853215161772355,
+        "heldout": 0.9151178611061205
+      },
+      "tune_pick": {
+        "tune": 0.8882158156017568,
+        "heldout": 0.9151178611061205
+      },
+      "mean_cfg_heldout": 0.793920675039096,
+      "best_possible_heldout": 0.9151178611061205
+    },
+    {
+      "draw": 36,
+      "peek_pick": {
+        "peek": 0.8946863864023856,
+        "heldout": 0.9270843355243048
+      },
+      "tune_pick": {
+        "tune": 0.8974074897590443,
+        "heldout": 0.9270843355243048
+      },
+      "mean_cfg_heldout": 0.8098705822508852,
+      "best_possible_heldout": 0.9270843355243048
+    },
+    {
+      "draw": 37,
+      "peek_pick": {
+        "peek": 0.9128907375631113,
+        "heldout": 0.9189879262809463
+      },
+      "tune_pick": {
+        "tune": 0.8875751437049292,
+        "heldout": 0.9189879262809463
+      },
+      "mean_cfg_heldout": 0.8067609600609874,
+      "best_possible_heldout": 0.9189879262809463
+    },
+    {
+      "draw": 38,
+      "peek_pick": {
+        "peek": 0.9037736880272245,
+        "heldout": 0.9180353242981293
+      },
+      "tune_pick": {
+        "tune": 0.89745612078571,
+        "heldout": 0.9126506760266626
+      },
+      "mean_cfg_heldout": 0.7907088619503999,
+      "best_possible_heldout": 0.9180353242981293
+    },
+    {
+      "draw": 39,
+      "peek_pick": {
+        "peek": 0.895408037684394,
+        "heldout": 0.91908640472247
+      },
+      "tune_pick": {
+        "tune": 0.9008882133083558,
+        "heldout": 0.915051789188082
+      },
+      "mean_cfg_heldout": 0.8001851350486837,
+      "best_possible_heldout": 0.91908640472247
+    }
+  ]
+}

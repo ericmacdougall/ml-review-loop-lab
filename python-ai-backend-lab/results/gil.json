@@ -1,0 +1,3936 @@
+{
+ "meta": {
+  "python": "3.12.3",
+  "gil_enabled": true,
+  "free_threaded_build": false,
+  "cpus": 48,
+  "units": 200,
+  "load_start": [
+   13.47119140625,
+   12.4736328125,
+   16.359375
+  ]
+ },
+ "runs": [
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.513671875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9299216810031794,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.513671875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9701993690105155,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.513671875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9553002339671366,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.513671875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9713574819616042,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.513671875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9541351899970323,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9152509270352311,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45587150199571624,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23786525300238281,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11829638399649411,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.0639825320104137,
+   "serial": 0.9399064249591902,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.1093754090252332,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.552734375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5578319429769181,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2698536890093237,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.14348112500738353,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07528300205012783,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0447727189748548,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5363842769875191,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.267619771999307,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.14167318301042542,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07581023901002482,
+   "serial": 1.0616115789744072,
+   "rep": 0,
+   "load1": 13.6689453125
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.69580078125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.028950516018085,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.6396484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.0154977529891767,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.6396484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0099336430430412,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.6396484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5091596179991029,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.6396484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.2640545869944617,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.6396484375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.024134945007972,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.34814453125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.0104333350318484,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0060908720479347,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5038680310244672,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.26375697198091075,
+   "serial": 4.0266603420022875,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.2636024499661289,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.13107311102794483,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.06757856596959755,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.037605594960041344,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.02889484801562503,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.336677014012821,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16796817700378597,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08614124497398734,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.047962932963855565,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.03534255700651556,
+   "serial": 0.31594414700521156,
+   "rep": 0,
+   "load1": 13.31982421875
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.1337890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9317599429632537,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.1337890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9475126169854775,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.1337890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9645533870207146,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.1337890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9466432459885255,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.1337890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9474475550232455,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.889871992985718,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.46163138799602166,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23319571296451613,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.1203470189939253,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.06357889500213787,
+   "serial": 0.8987553739571013,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0494530649739318,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5226395819918253,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.20361328125
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2805349580012262,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.1428248750162311,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07421212701592594,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0668036480201408,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5190311070182361,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2749656679807231,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.14023297402309254,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.08624979597516358,
+   "serial": 1.0882534449920058,
+   "rep": 1,
+   "load1": 13.748046875
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.028395956964232,
+   "rep": 1,
+   "load1": 13.60791015625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.031579651986249,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.91845703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.016468871035613,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.91845703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0106667100335471,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.91845703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.50619981699856,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.91845703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.26454593800008297,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.91845703125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.021014439989813,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.5244140625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.013019914040342,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0073882580036297,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5044011230347678,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.2635648979921825,
+   "serial": 4.028395956964232,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.25473120698006824,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.13297257298836485,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.06857928703539073,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.04015328601235524,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.03094673197483644,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3162812580121681,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.1638767839758657,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08340386097552255,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.0435236879857257,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.03027036297135055,
+   "serial": 0.3188804710516706,
+   "rep": 1,
+   "load1": 12.16162109375
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9045011940179393,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9224340849905275,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9267789089935832,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9246117920265533,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.916555781965144,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.828125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.904069117968902,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45876840699929744,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.22850143199320883,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.12542719003977254,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07069876400055364,
+   "serial": 0.8779889779980294,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0745850839884952,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.536652079958003,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2682592140045017,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.13622582296375185,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07011601497652009,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.44140625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0647216009674594,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.00537109375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5326590589829721,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.00537109375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.26810489100171253,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.00537109375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.13591241999529302,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.00537109375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07293400098569691,
+   "serial": 1.067705081019085,
+   "rep": 2,
+   "load1": 11.00537109375
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.7646484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.028219797997735,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.0134818439837545,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0088102559675463,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5057438450166956,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.703125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.26391421898733824,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.703125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.020026776008308,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.40625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.010081437008921,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0062034520087764,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5035699570435099,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.2625503019662574,
+   "serial": 4.020875781017821,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.3269519369932823,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.13276450999546796,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.07013511401601136,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.042488534993026406,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.03721276897704229,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3323828930151649,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16671008901903406,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08606430300278589,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.044925914029590786,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.02966357598779723,
+   "serial": 0.3297173510072753,
+   "rep": 2,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8970361339743249,
+   "rep": 3,
+   "load1": 10.05322265625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.8941475689643994,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.728515625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9241891179699451,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.728515625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9360692849732004,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.728515625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9204205109854229,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.728515625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9233702170313336,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.728515625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9084168529952876,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45444588898681104,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23104272095952183,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11845978198107332,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.06245496100746095,
+   "serial": 0.8970361339743249,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0576048929942772,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5315659099724144,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.266186936001759,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.13402090402087197,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07664048596052453,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.349609375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0588604279910214,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.56201171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5292899520136416,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.56201171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.26429857197217643,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.56201171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.13421977602411062,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.56201171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07195873802993447,
+   "serial": 1.0517081909929402,
+   "rep": 3,
+   "load1": 9.56201171875
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.5166015625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.026439692999702,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.5166015625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.017507043958176,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.15478515625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.008658346021548,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.15478515625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5062246060115285,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.15478515625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.26405548804905266,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 9.15478515625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.021464653022122,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 8.82177734375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.0123702959972434,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 8.82177734375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0061942629981786,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5036940530408174,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.2631068450282328,
+   "serial": 4.0169349100324325,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.3217277289950289,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.1281549709965475,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.06658653100021183,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.0361421350389719,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.028497842024080455,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.31889697298174724,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16158117301529273,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08274692203849554,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.04420857602963224,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.024739995948038995,
+   "serial": 0.32098851003684103,
+   "rep": 3,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9138557530241087,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.595703125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9221011840272695,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.3076171875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9227027800516225,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.3076171875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9273056170204654,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.3076171875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9311703650164418,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.3076171875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9077958959969692,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.3076171875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.4554129460011609,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23422302800463513,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11952105397358537,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.06232949800323695,
+   "serial": 0.883119713049382,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0567482420010492,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5319023790070787,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.26658906700322405,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.1352217579842545,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07060530001763254,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.03377882798668,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.443359375
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5266374649945647,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.32763671875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2654163839761168,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.32763671875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.14339061797363684,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.32763671875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07028483698377386,
+   "serial": 1.0312402690178715,
+   "rep": 4,
+   "load1": 8.32763671875
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.020298974995967,
+   "rep": 4,
+   "load1": 8.32763671875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.026515547011513,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 8.06103515625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.014622559014242,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.8154296875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0090052000014111,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.8154296875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5057182249729522,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.8154296875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.2636259699938819,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.8154296875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.017701889039017,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.669921875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.0110875210375525,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.669921875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0060240710154176,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 7.669921875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5036520480061881,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.26305194199085236,
+   "serial": 4.020298974995967,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.32313816295936704,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.1480382249574177,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.0661662159836851,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.04203776898793876,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.029669506009668112,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.32134213094832376,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.1602852640207857,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08265560900326818,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.042767407023347914,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.023794993991032243,
+   "serial": 0.3231524049770087,
+   "rep": 4,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8971085679950193,
+   "rep": 5,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.902941717999056,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 8.01708984375
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9103797310381196,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9133243170217611,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9216007280047052,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9200694200117141,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.887060331995599,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45057880401145667,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2288724910467863,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.1330063799978234,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 7.85546875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.06567385897506028,
+   "serial": 0.8971085679950193,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0597013600054197,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.541020636970643,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.26619838102487847,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.1379500679904595,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07358832599129528,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.036960718978662,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5269816539948806,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 8.748046875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2681550949928351,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 9.1689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.1331911910092458,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 9.1689453125
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07076456298818812,
+   "serial": 1.0557867210009135,
+   "rep": 5,
+   "load1": 9.1689453125
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.02143173397053,
+   "rep": 5,
+   "load1": 9.1689453125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.031476502015721,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.8349609375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.019007713999599,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.68798828125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0086485170177184,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.68798828125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5054123069858178,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.68798828125
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.26355235796654597,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.68798828125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.022234100033529,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.47265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.010375743964687,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.47265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0058336700312793,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.47265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5034067319938913,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.47265625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.2627047559944913,
+   "serial": 4.02143173397053,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.2609170340001583,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.13073597999755293,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.07111659605288878,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.036721392010804266,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.03124188503716141,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.31816894898656756,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16650153999216855,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08236743503948674,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.043075860012322664,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.02722062502289191,
+   "serial": 0.31831168103963137,
+   "rep": 5,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9092236190335825,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9198558389907703,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.2744140625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9258662349893712,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9302624670090154,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9374168450012803,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9092600689618848,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.4681420059641823,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2404057010426186,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11897543602390215,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.06384861597325653,
+   "serial": 0.8967884970479645,
+   "rep": 6,
+   "load1": 8.251953125
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0462132639950141,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5249618249945343,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2632339120027609,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.13383766799233854,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07104123500175774,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0323814940056764,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5215872830012813,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.27394833299331367,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.13124435598729178,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07292343798326328,
+   "serial": 1.047425429977011,
+   "rep": 6,
+   "load1": 8.0712890625
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.9853515625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.0242696210043505,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.98681640625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.0143290709820576,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.98681640625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0083566639805213,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.90771484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5052233000169508,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.90771484375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.2637224769569002,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.90771484375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.020106044015847,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.0097227710066363,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0055071870447136,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.503734131983947,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.26302535698050633,
+   "serial": 4.021920475002844,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.7548828125
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.2561337539809756,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.14747828501276672,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.06844320299569517,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.03675428300630301,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.03132072603330016,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3264674490201287,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16247123101493344,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.09541091497521847,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.049049612949602306,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.035875050991307944,
+   "serial": 0.32354294299148023,
+   "rep": 6,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9023611079901457,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9146795489941724,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.6943359375
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.924331616028212,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9271279409877025,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9237890799995512,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9456165070296265,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.4751293179579079,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2279404760338366,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11361539800418541,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07235295098507777,
+   "serial": 0.9048233579960652,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.79931640625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0532311630086042,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5295068669947796,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2641913000261411,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.13343599200015888,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07123110798420385,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0463916679727845,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5257880699937232,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2705932189710438,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.14269671600777656,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07091481203678995,
+   "serial": 1.0451481339987367,
+   "rep": 7,
+   "load1": 7.65478515625
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.021648590976838,
+   "rep": 7,
+   "load1": 8.9638671875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.027182332996745,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 8.72607421875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.01411933201598,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 8.72607421875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0088624130003154,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.46875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5133689970243722,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.46875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.2644098440068774,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.46875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.0199899599538185,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.01227711699903,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0082726539694704,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5056484310189262,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.2628220730111934,
+   "serial": 4.021648590976838,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.2546050419914536,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.13019679201534018,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.0674608699628152,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.35107421875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.04203886701725423,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.029318350018002093,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3266021779854782,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.16225932602537796,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.09605021099559963,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.05147092300467193,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.037010254978667945,
+   "serial": 0.3414822109625675,
+   "rep": 7,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.9003580450080335,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.9252965230261907,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9284528410062194,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.8837890625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9238197149825282,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9284190600155853,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.887883112009149,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45063973404467106,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23657839000225067,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11396398197393864,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.059380010003224015,
+   "serial": 0.8813927129958756,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.73291015625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.0488919309573248,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5285639810026623,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.2654288139892742,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.13583897094940767,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.07167995098279789,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0448701519635506,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5224573659943417,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.26532485301140696,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.1316793689620681,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.07065393903758377,
+   "serial": 1.034002847969532,
+   "rep": 8,
+   "load1": 9.353515625
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.9248046875
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.027705242973752,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8505859375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.0153505739872344,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8505859375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0081877480261028,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8505859375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5071133970050141,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.94287109375
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.2638064630446024,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.94287109375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.019303142966237,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.94287109375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.009262685023714,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.0074661870021373,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5038264140021056,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.26295774296158925,
+   "serial": 4.0193402039585635,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.2538402319769375,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.128114195948001,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.0702664339914918,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.038778287009336054,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.029523003031499684,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3462533970014192,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.1641636280110106,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 8.8671875
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.08506777498405427,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.04582962300628424,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.028958347043953836,
+   "serial": 0.3187774099642411,
+   "rep": 8,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.8779484939877875,
+   "rep": 9,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.8852344129700214,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.910584655997809,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.9092151779914275,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.9112334229866974,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 9.1181640625
+  },
+  {
+   "kind": "py",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.9207459699828178,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.9043639389565215,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.45064420002745464,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.23371964297257364,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.11961935099679977,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "py",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.08059148996835575,
+   "serial": 0.8779484939877875,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "hash",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 1.054825537954457,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 1.07430865598144,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 8.9482421875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.5588818299584091,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.28225982998264953,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.14254262298345566,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.0726072130491957,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 1.0938877770095132,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.5724448870168999,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.2874023129697889,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.1416424610069953,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "hash",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.08560205204412341,
+   "serial": 1.054825537954457,
+   "rep": 9,
+   "load1": 9.59326171875
+  },
+  {
+   "kind": "io",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.22509765625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 4.033431765972637,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.28759765625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 2.017479597008787,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.28759765625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 1.0088737499900162,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.28759765625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.5056541259982623,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.28759765625
+  },
+  {
+   "kind": "io",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.26405752601567656,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.10400390625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 4.020600761054084,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 9.10400390625
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 2.0123450990067795,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 1.006917915015947,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.5048402840038761,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "io",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.26331337698502466,
+   "serial": 4.020776853023563,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "serial",
+   "workers": 1,
+   "wall": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 1,
+   "wall": 0.26185438805259764,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 2,
+   "wall": 0.128710791002959,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 4,
+   "wall": 0.06613637402188033,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 8,
+   "wall": 0.03850008198060095,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "threads",
+   "workers": 16,
+   "wall": 0.029709196009207517,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 1,
+   "wall": 0.3383960979990661,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 2,
+   "wall": 0.1724360989755951,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 4,
+   "wall": 0.09163815603824332,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 8,
+   "wall": 0.04843725502723828,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  },
+  {
+   "kind": "numpy",
+   "mode": "processes",
+   "workers": 16,
+   "wall": 0.026085869991220534,
+   "serial": 0.32611156796338037,
+   "rep": 9,
+   "load1": 8.77490234375
+  }
+ ]
+}

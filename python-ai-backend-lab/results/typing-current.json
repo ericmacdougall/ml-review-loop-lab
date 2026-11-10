@@ -1,0 +1,320 @@
+[
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:85: note: Maybe you forgot to use \"await\"?",
+   "Found 2 errors in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:85:16 - error: Type \"CoroutineType[Any, Any, Completion]\" is not assignable to return type \"Completion\"",
+   "  \u00a0\u00a0\"CoroutineType[Any, Any, Completion]\" is not assignable to \"Completion\" (reportReturnType)",
+   "4 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B01",
+  "cls": "missing-await",
+  "note": "forgot await"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": false,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:82: error: Item \"None\" of \"Budget | None\" has no attribute \"charge\"  [union-attr]",
+   "Found 2 errors in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:76:19 - error: \"remaining\" is not a known attribute of \"None\" (reportOptionalMemberAccess)",
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:82:16 - error: \"charge\" is not a known attribute of \"None\" (reportOptionalMemberAccess)",
+   "2 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B02",
+  "cls": "none-deref",
+  "note": "dropped the unknown-tenant guard"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": false,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:83: error: Returning Any from function declared to return \"Completion\"  [no-any-return]",
+   "Found 2 errors in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "/home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py",
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:81:47 - error: \"complete\" is not a known attribute of \"None\" (reportOptionalMemberAccess)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B03",
+  "cls": "none-deref",
+  "note": "dropped the unknown-model guard"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": false,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:89: error: List comprehension has incompatible type List[str]; expected List[Completion]  [misc]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "/home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py",
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:89:16 - error: Type \"list[str]\" is not assignable to return type \"list[Completion]\" (reportReturnType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B04",
+  "cls": "wrong-return-type",
+  "note": "fan_out returns strings"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:84: note: Did you mean \"tokens_in\" or \"tokens_out\"?",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:84:23 - error: Argument type is unknown",
+   "  \u00a0\u00a0Argument corresponds to parameter \"n\" in function \"charge\" (reportUnknownArgumentType)",
+   "2 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B05",
+  "cls": "typeddict-key",
+  "note": "key typo"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:83: error: Argument 2 to \"wait_for\" has incompatible type \"str\"; expected \"float | None\"  [arg-type]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  \u00a0\u00a0\u00a0\u00a0\"str\" is not assignable to \"float\"",
+   "  \u00a0\u00a0\u00a0\u00a0\"str\" is not assignable to \"None\" (reportArgumentType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B06",
+  "cls": "wrong-arg-type",
+  "note": "timeout as str"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:48: error: Incompatible types (expression has type \"Literal['human']\", TypedDict item \"role\" has type \"Literal['system', 'user', 'assistant']\")  [typeddict-item]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  \u00a0\u00a0\u00a0\u00a0\"Literal['human']\" is not assignable to type \"Literal['user']\"",
+   "  \u00a0\u00a0\u00a0\u00a0\"Literal['human']\" is not assignable to type \"Literal['assistant']\" (reportReturnType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B07",
+  "cls": "literal-misuse",
+  "note": "invalid role"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:83: error: Missing positional argument \"max_tokens\" in call to \"complete\" of \"Provider\"  [call-arg]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  \u00a0\u00a0Argument corresponds to parameter \"n\" in function \"charge\" (reportUnknownArgumentType)",
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:85:16 - error: Return type is unknown (reportUnknownVariableType)",
+   "5 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B08",
+  "cls": "missing-arg",
+  "note": "dropped max_tokens"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:78: error: \"Budget\" has no attribute \"remainin\"; maybe \"remaining\"?  [attr-defined]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:78:19 - error: Cannot access attribute \"remainin\" for class \"Budget\"",
+   "  \u00a0\u00a0Attribute \"remainin\" is unknown (reportAttributeAccessIssue)",
+   "2 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B09",
+  "cls": "attr-typo",
+  "note": "method typo"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:59: error: Item \"None\" of \"str | None\" has no attribute \"upper\"  [union-attr]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "/home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py",
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:59:40 - error: \"upper\" is not a known attribute of \"None\" (reportOptionalMemberAccess)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B10",
+  "cls": "optional-as-str",
+  "note": "Optional used as str"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:84: error: Argument 1 to \"charge\" of \"Budget\" has incompatible type \"float\"; expected \"int\"  [arg-type]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:84:23 - error: Argument of type \"float\" cannot be assigned to parameter \"n\" of type \"int\" in function \"charge\"",
+   "  \u00a0\u00a0\"float\" is not assignable to \"int\" (reportArgumentType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B11",
+  "cls": "float-for-int",
+  "note": "float to int param"
+ },
+ {
+  "pytest_fail": false,
+  "pytest_thin_fail": false,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:72: note:     def [_T] get(self, TenantId, _T, /) -> Budget | _T",
+   "Found 2 errors in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:72:33 - error: Argument of type \"str\" cannot be assigned to parameter \"key\" of type \"TenantId\" in function \"get\"",
+   "  \u00a0\u00a0\"str\" is not assignable to \"TenantId\" (reportArgumentType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B12",
+  "cls": "wrong-newtype",
+  "note": "plain str used for TenantId key"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:85: error: Incompatible return value type (got \"None\", expected \"Completion\")  [return-value]",
+   "Found 1 error in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  /home/eric/lab-l/python-ai-backend-lab/data/tmptknkjop2/gateway.py:85:16 - error: Type \"None\" is not assignable to return type \"Completion\"",
+   "  \u00a0\u00a0\"None\" is not assignable to \"Completion\" (reportReturnType)",
+   "1 error, 0 warnings, 0 informations"
+  ],
+  "id": "B13",
+  "cls": "return-none",
+  "note": "call returns None"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": false,
+  "mypy_fail": true,
+  "pyright_fail": true,
+  "mypy_msg": [
+   "gateway.py:88: error: Argument 2 to \"total_cost\" of \"Gateway\" has incompatible type \"str\"; expected \"float\"  [arg-type]",
+   "Found 4 errors in 1 file (checked 1 source file)"
+  ],
+  "pyright_msg": [
+   "  \u00a0\u00a0Argument corresponds to parameter \"iterable\" in function \"__init__\"",
+   "  \u00a0\u00a0Argument type is \"list[Unknown]\" (reportUnknownArgumentType)",
+   "4 errors, 0 warnings, 0 informations"
+  ],
+  "id": "B14",
+  "cls": "await-non-awaitable",
+  "note": "wrong method in gather"
+ },
+ {
+  "pytest_fail": false,
+  "pytest_thin_fail": false,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L01",
+  "cls": "off-by-one",
+  "note": "boundary"
+ },
+ {
+  "pytest_fail": false,
+  "pytest_thin_fail": false,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L02",
+  "cls": "wrong-units",
+  "note": "seconds vs ms"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L03",
+  "cls": "dropped-term",
+  "note": "bills input only"
+ },
+ {
+  "pytest_fail": false,
+  "pytest_thin_fail": false,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L04",
+  "cls": "wrong-price-unit",
+  "note": "per-1k wrong"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": true,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L05",
+  "cls": "wrong-role-filter",
+  "note": "wrong role"
+ },
+ {
+  "pytest_fail": true,
+  "pytest_thin_fail": false,
+  "mypy_fail": false,
+  "pyright_fail": false,
+  "mypy_msg": [],
+  "pyright_msg": [],
+  "id": "L06",
+  "cls": "swallow-guard",
+  "note": "guard disabled"
+ }
+]

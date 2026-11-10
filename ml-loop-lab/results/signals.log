@@ -1,0 +1,64 @@
+loop_model {
+ "held_reject": {
+  "precision": 0.9481446139924256,
+  "recall": 0.7091666666666667,
+  "flagged": 448.9
+ },
+ "held_review": {
+  "precision": 0.8255847085794061,
+  "recall": 0.8629166666666667,
+  "flagged": 627.4
+ },
+ "drift_reject_stale": {
+  "precision": 0.8931510563683661,
+  "recall": 0.37780487804878055,
+  "flagged": 86.95
+ },
+ "drift_review_stale": {
+  "precision": 0.7251760076340481,
+  "recall": 0.672439024390244,
+  "flagged": 190.4
+ },
+ "drift_reject_recal": {
+  "precision": 0.9447038824648741,
+  "recall": 0.24560975609756103,
+  "flagged": 53.7
+ },
+ "drift_review_recal": {
+  "precision": 0.47211879879620994,
+  "recall": 0.905609756097561,
+  "flagged": 394.75
+ }
+}
+clip_zeroshot {
+ "held_reject": {
+  "precision": 0.0,
+  "recall": 0.0,
+  "flagged": 0.0
+ },
+ "held_review": {
+  "precision": 0.22939677145284623,
+  "recall": 0.9,
+  "flagged": 2354.0
+ },
+ "drift_reject_stale": {
+  "precision": 0.0,
+  "recall": 0.0,
+  "flagged": 0.0
+ },
+ "drift_review_stale": {
+  "precision": 0.22418136020151133,
+  "recall": 0.8682926829268293,
+  "flagged": 794.0
+ },
+ "drift_reject_recal": {
+  "precision": 0.0,
+  "recall": 0.0,
+  "flagged": 0.0
+ },
+ "drift_review_recal": {
+  "precision": 0.21570926143024619,
+  "recall": 0.8975609756097561,
+  "flagged": 853.0
+ }
+}

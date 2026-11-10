@@ -1,0 +1,401 @@
+rep0 py    threads   w= 1 wall=0.93s speedup=1.01x load=13.5
+rep0 py    threads   w= 2 wall=0.97s speedup=0.97x load=13.5
+rep0 py    threads   w= 4 wall=0.96s speedup=0.98x load=13.5
+rep0 py    threads   w= 8 wall=0.97s speedup=0.97x load=13.5
+rep0 py    threads   w=16 wall=0.95s speedup=0.99x load=13.6
+rep0 py    processes w= 1 wall=0.92s speedup=1.03x load=13.6
+rep0 py    processes w= 2 wall=0.46s speedup=2.06x load=13.6
+rep0 py    processes w= 4 wall=0.24s speedup=3.95x load=13.6
+rep0 py    processes w= 8 wall=0.12s speedup=7.95x load=13.6
+rep0 py    processes w=16 wall=0.06s speedup=14.69x load=13.6
+rep0 hash  threads   w= 1 wall=1.11s speedup=0.96x load=13.6
+rep0 hash  threads   w= 2 wall=0.56s speedup=1.90x load=13.7
+rep0 hash  threads   w= 4 wall=0.27s speedup=3.93x load=13.7
+rep0 hash  threads   w= 8 wall=0.14s speedup=7.40x load=13.7
+rep0 hash  threads   w=16 wall=0.08s speedup=14.10x load=13.7
+rep0 hash  processes w= 1 wall=1.04s speedup=1.02x load=13.7
+rep0 hash  processes w= 2 wall=0.54s speedup=1.98x load=13.7
+rep0 hash  processes w= 4 wall=0.27s speedup=3.97x load=13.7
+rep0 hash  processes w= 8 wall=0.14s speedup=7.49x load=13.7
+rep0 hash  processes w=16 wall=0.08s speedup=14.00x load=13.7
+rep0 io    threads   w= 1 wall=4.03s speedup=1.00x load=13.6
+rep0 io    threads   w= 2 wall=2.02s speedup=2.00x load=13.6
+rep0 io    threads   w= 4 wall=1.01s speedup=3.99x load=13.6
+rep0 io    threads   w= 8 wall=0.51s speedup=7.91x load=13.6
+rep0 io    threads   w=16 wall=0.26s speedup=15.25x load=13.6
+rep0 io    processes w= 1 wall=4.02s speedup=1.00x load=13.3
+rep0 io    processes w= 2 wall=2.01s speedup=2.00x load=13.3
+rep0 io    processes w= 4 wall=1.01s speedup=4.00x load=13.3
+rep0 io    processes w= 8 wall=0.50s speedup=7.99x load=13.3
+rep0 io    processes w=16 wall=0.26s speedup=15.27x load=13.3
+rep0 numpy threads   w= 1 wall=0.26s speedup=1.20x load=13.3
+rep0 numpy threads   w= 2 wall=0.13s speedup=2.41x load=13.3
+rep0 numpy threads   w= 4 wall=0.07s speedup=4.68x load=13.3
+rep0 numpy threads   w= 8 wall=0.04s speedup=8.40x load=13.3
+rep0 numpy threads   w=16 wall=0.03s speedup=10.93x load=13.3
+rep0 numpy processes w= 1 wall=0.34s speedup=0.94x load=13.3
+rep0 numpy processes w= 2 wall=0.17s speedup=1.88x load=13.3
+rep0 numpy processes w= 4 wall=0.09s speedup=3.67x load=13.3
+rep0 numpy processes w= 8 wall=0.05s speedup=6.59x load=13.3
+rep0 numpy processes w=16 wall=0.04s speedup=8.94x load=13.3
+rep1 py    threads   w= 1 wall=0.93s speedup=0.96x load=13.1
+rep1 py    threads   w= 2 wall=0.95s speedup=0.95x load=13.1
+rep1 py    threads   w= 4 wall=0.96s speedup=0.93x load=13.1
+rep1 py    threads   w= 8 wall=0.95s speedup=0.95x load=13.1
+rep1 py    threads   w=16 wall=0.95s speedup=0.95x load=13.2
+rep1 py    processes w= 1 wall=0.89s speedup=1.01x load=13.2
+rep1 py    processes w= 2 wall=0.46s speedup=1.95x load=13.2
+rep1 py    processes w= 4 wall=0.23s speedup=3.85x load=13.2
+rep1 py    processes w= 8 wall=0.12s speedup=7.47x load=13.2
+rep1 py    processes w=16 wall=0.06s speedup=14.14x load=13.2
+rep1 hash  threads   w= 1 wall=1.05s speedup=1.04x load=13.2
+rep1 hash  threads   w= 2 wall=0.52s speedup=2.08x load=13.2
+rep1 hash  threads   w= 4 wall=0.28s speedup=3.88x load=13.7
+rep1 hash  threads   w= 8 wall=0.14s speedup=7.62x load=13.7
+rep1 hash  threads   w=16 wall=0.07s speedup=14.66x load=13.7
+rep1 hash  processes w= 1 wall=1.07s speedup=1.02x load=13.7
+rep1 hash  processes w= 2 wall=0.52s speedup=2.10x load=13.7
+rep1 hash  processes w= 4 wall=0.27s speedup=3.96x load=13.7
+rep1 hash  processes w= 8 wall=0.14s speedup=7.76x load=13.7
+rep1 hash  processes w=16 wall=0.09s speedup=12.62x load=13.7
+rep1 io    threads   w= 1 wall=4.03s speedup=1.00x load=12.9
+rep1 io    threads   w= 2 wall=2.02s speedup=2.00x load=12.9
+rep1 io    threads   w= 4 wall=1.01s speedup=3.99x load=12.9
+rep1 io    threads   w= 8 wall=0.51s speedup=7.96x load=12.9
+rep1 io    threads   w=16 wall=0.26s speedup=15.23x load=12.9
+rep1 io    processes w= 1 wall=4.02s speedup=1.00x load=12.5
+rep1 io    processes w= 2 wall=2.01s speedup=2.00x load=12.2
+rep1 io    processes w= 4 wall=1.01s speedup=4.00x load=12.2
+rep1 io    processes w= 8 wall=0.50s speedup=7.99x load=12.2
+rep1 io    processes w=16 wall=0.26s speedup=15.28x load=12.2
+rep1 numpy threads   w= 1 wall=0.25s speedup=1.25x load=12.2
+rep1 numpy threads   w= 2 wall=0.13s speedup=2.40x load=12.2
+rep1 numpy threads   w= 4 wall=0.07s speedup=4.65x load=12.2
+rep1 numpy threads   w= 8 wall=0.04s speedup=7.94x load=12.2
+rep1 numpy threads   w=16 wall=0.03s speedup=10.30x load=12.2
+rep1 numpy processes w= 1 wall=0.32s speedup=1.01x load=12.2
+rep1 numpy processes w= 2 wall=0.16s speedup=1.95x load=12.2
+rep1 numpy processes w= 4 wall=0.08s speedup=3.82x load=12.2
+rep1 numpy processes w= 8 wall=0.04s speedup=7.33x load=12.2
+rep1 numpy processes w=16 wall=0.03s speedup=10.53x load=12.2
+rep2 py    threads   w= 1 wall=0.90s speedup=0.97x load=11.8
+rep2 py    threads   w= 2 wall=0.92s speedup=0.95x load=11.8
+rep2 py    threads   w= 4 wall=0.93s speedup=0.95x load=11.8
+rep2 py    threads   w= 8 wall=0.92s speedup=0.95x load=11.8
+rep2 py    threads   w=16 wall=0.92s speedup=0.96x load=11.8
+rep2 py    processes w= 1 wall=0.90s speedup=0.97x load=11.4
+rep2 py    processes w= 2 wall=0.46s speedup=1.91x load=11.4
+rep2 py    processes w= 4 wall=0.23s speedup=3.84x load=11.4
+rep2 py    processes w= 8 wall=0.13s speedup=7.00x load=11.4
+rep2 py    processes w=16 wall=0.07s speedup=12.42x load=11.4
+rep2 hash  threads   w= 1 wall=1.07s speedup=0.99x load=11.4
+rep2 hash  threads   w= 2 wall=0.54s speedup=1.99x load=11.4
+rep2 hash  threads   w= 4 wall=0.27s speedup=3.98x load=11.4
+rep2 hash  threads   w= 8 wall=0.14s speedup=7.84x load=11.4
+rep2 hash  threads   w=16 wall=0.07s speedup=15.23x load=11.4
+rep2 hash  processes w= 1 wall=1.06s speedup=1.00x load=11.0
+rep2 hash  processes w= 2 wall=0.53s speedup=2.00x load=11.0
+rep2 hash  processes w= 4 wall=0.27s speedup=3.98x load=11.0
+rep2 hash  processes w= 8 wall=0.14s speedup=7.86x load=11.0
+rep2 hash  processes w=16 wall=0.07s speedup=14.64x load=11.0
+rep2 io    threads   w= 1 wall=4.03s speedup=1.00x load=10.7
+rep2 io    threads   w= 2 wall=2.01s speedup=2.00x load=10.7
+rep2 io    threads   w= 4 wall=1.01s speedup=3.99x load=10.7
+rep2 io    threads   w= 8 wall=0.51s speedup=7.95x load=10.7
+rep2 io    threads   w=16 wall=0.26s speedup=15.24x load=10.7
+rep2 io    processes w= 1 wall=4.02s speedup=1.00x load=10.4
+rep2 io    processes w= 2 wall=2.01s speedup=2.00x load=10.1
+rep2 io    processes w= 4 wall=1.01s speedup=4.00x load=10.1
+rep2 io    processes w= 8 wall=0.50s speedup=7.98x load=10.1
+rep2 io    processes w=16 wall=0.26s speedup=15.31x load=10.1
+rep2 numpy threads   w= 1 wall=0.33s speedup=1.01x load=10.1
+rep2 numpy threads   w= 2 wall=0.13s speedup=2.48x load=10.1
+rep2 numpy threads   w= 4 wall=0.07s speedup=4.70x load=10.1
+rep2 numpy threads   w= 8 wall=0.04s speedup=7.76x load=10.1
+rep2 numpy threads   w=16 wall=0.04s speedup=8.86x load=10.1
+rep2 numpy processes w= 1 wall=0.33s speedup=0.99x load=10.1
+rep2 numpy processes w= 2 wall=0.17s speedup=1.98x load=10.1
+rep2 numpy processes w= 4 wall=0.09s speedup=3.83x load=10.1
+rep2 numpy processes w= 8 wall=0.04s speedup=7.34x load=10.1
+rep2 numpy processes w=16 wall=0.03s speedup=11.12x load=10.1
+rep3 py    threads   w= 1 wall=0.89s speedup=1.00x load=9.7
+rep3 py    threads   w= 2 wall=0.92s speedup=0.97x load=9.7
+rep3 py    threads   w= 4 wall=0.94s speedup=0.96x load=9.7
+rep3 py    threads   w= 8 wall=0.92s speedup=0.97x load=9.7
+rep3 py    threads   w=16 wall=0.92s speedup=0.97x load=9.7
+rep3 py    processes w= 1 wall=0.91s speedup=0.99x load=9.3
+rep3 py    processes w= 2 wall=0.45s speedup=1.97x load=9.3
+rep3 py    processes w= 4 wall=0.23s speedup=3.88x load=9.3
+rep3 py    processes w= 8 wall=0.12s speedup=7.57x load=9.3
+rep3 py    processes w=16 wall=0.06s speedup=14.36x load=9.3
+rep3 hash  threads   w= 1 wall=1.06s speedup=0.99x load=9.3
+rep3 hash  threads   w= 2 wall=0.53s speedup=1.98x load=9.3
+rep3 hash  threads   w= 4 wall=0.27s speedup=3.95x load=9.3
+rep3 hash  threads   w= 8 wall=0.13s speedup=7.85x load=9.3
+rep3 hash  threads   w=16 wall=0.08s speedup=13.72x load=9.3
+rep3 hash  processes w= 1 wall=1.06s speedup=0.99x load=9.6
+rep3 hash  processes w= 2 wall=0.53s speedup=1.99x load=9.6
+rep3 hash  processes w= 4 wall=0.26s speedup=3.98x load=9.6
+rep3 hash  processes w= 8 wall=0.13s speedup=7.84x load=9.6
+rep3 hash  processes w=16 wall=0.07s speedup=14.62x load=9.6
+rep3 io    threads   w= 1 wall=4.03s speedup=1.00x load=9.5
+rep3 io    threads   w= 2 wall=2.02s speedup=1.99x load=9.2
+rep3 io    threads   w= 4 wall=1.01s speedup=3.98x load=9.2
+rep3 io    threads   w= 8 wall=0.51s speedup=7.94x load=9.2
+rep3 io    threads   w=16 wall=0.26s speedup=15.21x load=9.2
+rep3 io    processes w= 1 wall=4.02s speedup=1.00x load=8.8
+rep3 io    processes w= 2 wall=2.01s speedup=2.00x load=8.8
+rep3 io    processes w= 4 wall=1.01s speedup=3.99x load=8.6
+rep3 io    processes w= 8 wall=0.50s speedup=7.97x load=8.6
+rep3 io    processes w=16 wall=0.26s speedup=15.27x load=8.6
+rep3 numpy threads   w= 1 wall=0.32s speedup=1.00x load=8.6
+rep3 numpy threads   w= 2 wall=0.13s speedup=2.50x load=8.6
+rep3 numpy threads   w= 4 wall=0.07s speedup=4.82x load=8.6
+rep3 numpy threads   w= 8 wall=0.04s speedup=8.88x load=8.6
+rep3 numpy threads   w=16 wall=0.03s speedup=11.26x load=8.6
+rep3 numpy processes w= 1 wall=0.32s speedup=1.01x load=8.6
+rep3 numpy processes w= 2 wall=0.16s speedup=1.99x load=8.6
+rep3 numpy processes w= 4 wall=0.08s speedup=3.88x load=8.6
+rep3 numpy processes w= 8 wall=0.04s speedup=7.26x load=8.6
+rep3 numpy processes w=16 wall=0.02s speedup=12.97x load=8.6
+rep4 py    threads   w= 1 wall=0.91s speedup=0.97x load=8.6
+rep4 py    threads   w= 2 wall=0.92s speedup=0.96x load=8.3
+rep4 py    threads   w= 4 wall=0.92s speedup=0.96x load=8.3
+rep4 py    threads   w= 8 wall=0.93s speedup=0.95x load=8.3
+rep4 py    threads   w=16 wall=0.93s speedup=0.95x load=8.3
+rep4 py    processes w= 1 wall=0.91s speedup=0.97x load=8.3
+rep4 py    processes w= 2 wall=0.46s speedup=1.94x load=8.4
+rep4 py    processes w= 4 wall=0.23s speedup=3.77x load=8.4
+rep4 py    processes w= 8 wall=0.12s speedup=7.39x load=8.4
+rep4 py    processes w=16 wall=0.06s speedup=14.17x load=8.4
+rep4 hash  threads   w= 1 wall=1.06s speedup=0.98x load=8.4
+rep4 hash  threads   w= 2 wall=0.53s speedup=1.94x load=8.4
+rep4 hash  threads   w= 4 wall=0.27s speedup=3.87x load=8.4
+rep4 hash  threads   w= 8 wall=0.14s speedup=7.63x load=8.4
+rep4 hash  threads   w=16 wall=0.07s speedup=14.61x load=8.4
+rep4 hash  processes w= 1 wall=1.03s speedup=1.00x load=8.4
+rep4 hash  processes w= 2 wall=0.53s speedup=1.96x load=8.3
+rep4 hash  processes w= 4 wall=0.27s speedup=3.89x load=8.3
+rep4 hash  processes w= 8 wall=0.14s speedup=7.19x load=8.3
+rep4 hash  processes w=16 wall=0.07s speedup=14.67x load=8.3
+rep4 io    threads   w= 1 wall=4.03s speedup=1.00x load=8.1
+rep4 io    threads   w= 2 wall=2.01s speedup=2.00x load=7.8
+rep4 io    threads   w= 4 wall=1.01s speedup=3.98x load=7.8
+rep4 io    threads   w= 8 wall=0.51s speedup=7.95x load=7.8
+rep4 io    threads   w=16 wall=0.26s speedup=15.25x load=7.8
+rep4 io    processes w= 1 wall=4.02s speedup=1.00x load=7.7
+rep4 io    processes w= 2 wall=2.01s speedup=2.00x load=7.7
+rep4 io    processes w= 4 wall=1.01s speedup=4.00x load=7.7
+rep4 io    processes w= 8 wall=0.50s speedup=7.98x load=8.0
+rep4 io    processes w=16 wall=0.26s speedup=15.28x load=8.0
+rep4 numpy threads   w= 1 wall=0.32s speedup=1.00x load=8.0
+rep4 numpy threads   w= 2 wall=0.15s speedup=2.18x load=8.0
+rep4 numpy threads   w= 4 wall=0.07s speedup=4.88x load=8.0
+rep4 numpy threads   w= 8 wall=0.04s speedup=7.69x load=8.0
+rep4 numpy threads   w=16 wall=0.03s speedup=10.89x load=8.0
+rep4 numpy processes w= 1 wall=0.32s speedup=1.01x load=8.0
+rep4 numpy processes w= 2 wall=0.16s speedup=2.02x load=8.0
+rep4 numpy processes w= 4 wall=0.08s speedup=3.91x load=8.0
+rep4 numpy processes w= 8 wall=0.04s speedup=7.56x load=8.0
+rep4 numpy processes w=16 wall=0.02s speedup=13.58x load=8.0
+rep5 py    threads   w= 1 wall=0.90s speedup=0.99x load=8.0
+rep5 py    threads   w= 2 wall=0.91s speedup=0.99x load=7.9
+rep5 py    threads   w= 4 wall=0.91s speedup=0.98x load=7.9
+rep5 py    threads   w= 8 wall=0.92s speedup=0.97x load=7.9
+rep5 py    threads   w=16 wall=0.92s speedup=0.98x load=7.9
+rep5 py    processes w= 1 wall=0.89s speedup=1.01x load=7.9
+rep5 py    processes w= 2 wall=0.45s speedup=1.99x load=7.9
+rep5 py    processes w= 4 wall=0.23s speedup=3.92x load=7.9
+rep5 py    processes w= 8 wall=0.13s speedup=6.74x load=7.9
+rep5 py    processes w=16 wall=0.07s speedup=13.66x load=8.7
+rep5 hash  threads   w= 1 wall=1.06s speedup=1.00x load=8.7
+rep5 hash  threads   w= 2 wall=0.54s speedup=1.95x load=8.7
+rep5 hash  threads   w= 4 wall=0.27s speedup=3.97x load=8.7
+rep5 hash  threads   w= 8 wall=0.14s speedup=7.65x load=8.7
+rep5 hash  threads   w=16 wall=0.07s speedup=14.35x load=8.7
+rep5 hash  processes w= 1 wall=1.04s speedup=1.02x load=8.7
+rep5 hash  processes w= 2 wall=0.53s speedup=2.00x load=8.7
+rep5 hash  processes w= 4 wall=0.27s speedup=3.94x load=9.2
+rep5 hash  processes w= 8 wall=0.13s speedup=7.93x load=9.2
+rep5 hash  processes w=16 wall=0.07s speedup=14.92x load=9.2
+rep5 io    threads   w= 1 wall=4.03s speedup=1.00x load=8.8
+rep5 io    threads   w= 2 wall=2.02s speedup=1.99x load=8.7
+rep5 io    threads   w= 4 wall=1.01s speedup=3.99x load=8.7
+rep5 io    threads   w= 8 wall=0.51s speedup=7.96x load=8.7
+rep5 io    threads   w=16 wall=0.26s speedup=15.26x load=8.7
+rep5 io    processes w= 1 wall=4.02s speedup=1.00x load=8.5
+rep5 io    processes w= 2 wall=2.01s speedup=2.00x load=8.5
+rep5 io    processes w= 4 wall=1.01s speedup=4.00x load=8.5
+rep5 io    processes w= 8 wall=0.50s speedup=7.99x load=8.5
+rep5 io    processes w=16 wall=0.26s speedup=15.31x load=8.3
+rep5 numpy threads   w= 1 wall=0.26s speedup=1.22x load=8.3
+rep5 numpy threads   w= 2 wall=0.13s speedup=2.43x load=8.3
+rep5 numpy threads   w= 4 wall=0.07s speedup=4.48x load=8.3
+rep5 numpy threads   w= 8 wall=0.04s speedup=8.67x load=8.3
+rep5 numpy threads   w=16 wall=0.03s speedup=10.19x load=8.3
+rep5 numpy processes w= 1 wall=0.32s speedup=1.00x load=8.3
+rep5 numpy processes w= 2 wall=0.17s speedup=1.91x load=8.3
+rep5 numpy processes w= 4 wall=0.08s speedup=3.86x load=8.3
+rep5 numpy processes w= 8 wall=0.04s speedup=7.39x load=8.3
+rep5 numpy processes w=16 wall=0.03s speedup=11.69x load=8.3
+rep6 py    threads   w= 1 wall=0.91s speedup=0.99x load=8.3
+rep6 py    threads   w= 2 wall=0.92s speedup=0.97x load=8.3
+rep6 py    threads   w= 4 wall=0.93s speedup=0.97x load=8.3
+rep6 py    threads   w= 8 wall=0.93s speedup=0.96x load=8.3
+rep6 py    threads   w=16 wall=0.94s speedup=0.96x load=8.3
+rep6 py    processes w= 1 wall=0.91s speedup=0.99x load=8.3
+rep6 py    processes w= 2 wall=0.47s speedup=1.92x load=8.3
+rep6 py    processes w= 4 wall=0.24s speedup=3.73x load=8.3
+rep6 py    processes w= 8 wall=0.12s speedup=7.54x load=8.3
+rep6 py    processes w=16 wall=0.06s speedup=14.05x load=8.3
+rep6 hash  threads   w= 1 wall=1.05s speedup=1.00x load=8.1
+rep6 hash  threads   w= 2 wall=0.52s speedup=2.00x load=8.1
+rep6 hash  threads   w= 4 wall=0.26s speedup=3.98x load=8.1
+rep6 hash  threads   w= 8 wall=0.13s speedup=7.83x load=8.1
+rep6 hash  threads   w=16 wall=0.07s speedup=14.74x load=8.1
+rep6 hash  processes w= 1 wall=1.03s speedup=1.01x load=8.1
+rep6 hash  processes w= 2 wall=0.52s speedup=2.01x load=8.1
+rep6 hash  processes w= 4 wall=0.27s speedup=3.82x load=8.1
+rep6 hash  processes w= 8 wall=0.13s speedup=7.98x load=8.1
+rep6 hash  processes w=16 wall=0.07s speedup=14.36x load=8.1
+rep6 io    threads   w= 1 wall=4.02s speedup=1.00x load=8.0
+rep6 io    threads   w= 2 wall=2.01s speedup=2.00x load=8.0
+rep6 io    threads   w= 4 wall=1.01s speedup=3.99x load=7.9
+rep6 io    threads   w= 8 wall=0.51s speedup=7.96x load=7.9
+rep6 io    threads   w=16 wall=0.26s speedup=15.25x load=7.9
+rep6 io    processes w= 1 wall=4.02s speedup=1.00x load=7.8
+rep6 io    processes w= 2 wall=2.01s speedup=2.00x load=7.8
+rep6 io    processes w= 4 wall=1.01s speedup=4.00x load=7.8
+rep6 io    processes w= 8 wall=0.50s speedup=7.98x load=7.8
+rep6 io    processes w=16 wall=0.26s speedup=15.29x load=7.8
+rep6 numpy threads   w= 1 wall=0.26s speedup=1.26x load=7.7
+rep6 numpy threads   w= 2 wall=0.15s speedup=2.19x load=7.7
+rep6 numpy threads   w= 4 wall=0.07s speedup=4.73x load=7.7
+rep6 numpy threads   w= 8 wall=0.04s speedup=8.80x load=7.7
+rep6 numpy threads   w=16 wall=0.03s speedup=10.33x load=7.7
+rep6 numpy processes w= 1 wall=0.33s speedup=0.99x load=7.7
+rep6 numpy processes w= 2 wall=0.16s speedup=1.99x load=7.7
+rep6 numpy processes w= 4 wall=0.10s speedup=3.39x load=7.7
+rep6 numpy processes w= 8 wall=0.05s speedup=6.60x load=7.7
+rep6 numpy processes w=16 wall=0.04s speedup=9.02x load=7.7
+rep7 py    threads   w= 1 wall=0.90s speedup=1.00x load=7.7
+rep7 py    threads   w= 2 wall=0.91s speedup=0.99x load=7.7
+rep7 py    threads   w= 4 wall=0.92s speedup=0.98x load=7.8
+rep7 py    threads   w= 8 wall=0.93s speedup=0.98x load=7.8
+rep7 py    threads   w=16 wall=0.92s speedup=0.98x load=7.8
+rep7 py    processes w= 1 wall=0.95s speedup=0.96x load=7.8
+rep7 py    processes w= 2 wall=0.48s speedup=1.90x load=7.8
+rep7 py    processes w= 4 wall=0.23s speedup=3.97x load=7.8
+rep7 py    processes w= 8 wall=0.11s speedup=7.96x load=7.8
+rep7 py    processes w=16 wall=0.07s speedup=12.51x load=7.8
+rep7 hash  threads   w= 1 wall=1.05s speedup=0.99x load=7.7
+rep7 hash  threads   w= 2 wall=0.53s speedup=1.97x load=7.7
+rep7 hash  threads   w= 4 wall=0.26s speedup=3.96x load=7.7
+rep7 hash  threads   w= 8 wall=0.13s speedup=7.83x load=7.7
+rep7 hash  threads   w=16 wall=0.07s speedup=14.67x load=7.7
+rep7 hash  processes w= 1 wall=1.05s speedup=1.00x load=7.7
+rep7 hash  processes w= 2 wall=0.53s speedup=1.99x load=7.7
+rep7 hash  processes w= 4 wall=0.27s speedup=3.86x load=7.7
+rep7 hash  processes w= 8 wall=0.14s speedup=7.32x load=7.7
+rep7 hash  processes w=16 wall=0.07s speedup=14.74x load=7.7
+rep7 io    threads   w= 1 wall=4.03s speedup=1.00x load=8.7
+rep7 io    threads   w= 2 wall=2.01s speedup=2.00x load=8.7
+rep7 io    threads   w= 4 wall=1.01s speedup=3.99x load=9.5
+rep7 io    threads   w= 8 wall=0.51s speedup=7.83x load=9.5
+rep7 io    threads   w=16 wall=0.26s speedup=15.21x load=9.5
+rep7 io    processes w= 1 wall=4.02s speedup=1.00x load=9.4
+rep7 io    processes w= 2 wall=2.01s speedup=2.00x load=9.4
+rep7 io    processes w= 4 wall=1.01s speedup=3.99x load=9.4
+rep7 io    processes w= 8 wall=0.51s speedup=7.95x load=9.4
+rep7 io    processes w=16 wall=0.26s speedup=15.30x load=9.4
+rep7 numpy threads   w= 1 wall=0.25s speedup=1.34x load=9.4
+rep7 numpy threads   w= 2 wall=0.13s speedup=2.62x load=9.4
+rep7 numpy threads   w= 4 wall=0.07s speedup=5.06x load=9.4
+rep7 numpy threads   w= 8 wall=0.04s speedup=8.12x load=9.9
+rep7 numpy threads   w=16 wall=0.03s speedup=11.65x load=9.9
+rep7 numpy processes w= 1 wall=0.33s speedup=1.05x load=9.9
+rep7 numpy processes w= 2 wall=0.16s speedup=2.10x load=9.9
+rep7 numpy processes w= 4 wall=0.10s speedup=3.56x load=9.9
+rep7 numpy processes w= 8 wall=0.05s speedup=6.63x load=9.9
+rep7 numpy processes w=16 wall=0.04s speedup=9.23x load=9.9
+rep8 py    threads   w= 1 wall=0.90s speedup=0.98x load=9.9
+rep8 py    threads   w= 2 wall=0.93s speedup=0.95x load=9.9
+rep8 py    threads   w= 4 wall=0.93s speedup=0.95x load=9.9
+rep8 py    threads   w= 8 wall=0.92s speedup=0.95x load=9.7
+rep8 py    threads   w=16 wall=0.93s speedup=0.95x load=9.7
+rep8 py    processes w= 1 wall=0.89s speedup=0.99x load=9.7
+rep8 py    processes w= 2 wall=0.45s speedup=1.96x load=9.7
+rep8 py    processes w= 4 wall=0.24s speedup=3.73x load=9.7
+rep8 py    processes w= 8 wall=0.11s speedup=7.73x load=9.7
+rep8 py    processes w=16 wall=0.06s speedup=14.84x load=9.7
+rep8 hash  threads   w= 1 wall=1.05s speedup=0.99x load=9.4
+rep8 hash  threads   w= 2 wall=0.53s speedup=1.96x load=9.4
+rep8 hash  threads   w= 4 wall=0.27s speedup=3.90x load=9.4
+rep8 hash  threads   w= 8 wall=0.14s speedup=7.61x load=9.4
+rep8 hash  threads   w=16 wall=0.07s speedup=14.43x load=9.4
+rep8 hash  processes w= 1 wall=1.04s speedup=0.99x load=9.4
+rep8 hash  processes w= 2 wall=0.52s speedup=1.98x load=9.4
+rep8 hash  processes w= 4 wall=0.27s speedup=3.90x load=9.4
+rep8 hash  processes w= 8 wall=0.13s speedup=7.85x load=9.4
+rep8 hash  processes w=16 wall=0.07s speedup=14.63x load=9.4
+rep8 io    threads   w= 1 wall=4.03s speedup=1.00x load=8.9
+rep8 io    threads   w= 2 wall=2.02s speedup=1.99x load=8.9
+rep8 io    threads   w= 4 wall=1.01s speedup=3.99x load=8.9
+rep8 io    threads   w= 8 wall=0.51s speedup=7.93x load=8.9
+rep8 io    threads   w=16 wall=0.26s speedup=15.24x load=8.9
+rep8 io    processes w= 1 wall=4.02s speedup=1.00x load=8.9
+rep8 io    processes w= 2 wall=2.01s speedup=2.00x load=8.9
+rep8 io    processes w= 4 wall=1.01s speedup=3.99x load=8.9
+rep8 io    processes w= 8 wall=0.50s speedup=7.98x load=8.9
+rep8 io    processes w=16 wall=0.26s speedup=15.29x load=8.9
+rep8 numpy threads   w= 1 wall=0.25s speedup=1.26x load=8.9
+rep8 numpy threads   w= 2 wall=0.13s speedup=2.49x load=8.9
+rep8 numpy threads   w= 4 wall=0.07s speedup=4.54x load=8.9
+rep8 numpy threads   w= 8 wall=0.04s speedup=8.22x load=8.9
+rep8 numpy threads   w=16 wall=0.03s speedup=10.80x load=8.9
+rep8 numpy processes w= 1 wall=0.35s speedup=0.92x load=8.9
+rep8 numpy processes w= 2 wall=0.16s speedup=1.94x load=8.9
+rep8 numpy processes w= 4 wall=0.09s speedup=3.75x load=9.1
+rep8 numpy processes w= 8 wall=0.05s speedup=6.96x load=9.1
+rep8 numpy processes w=16 wall=0.03s speedup=11.01x load=9.1
+rep9 py    threads   w= 1 wall=0.89s speedup=0.99x load=9.1
+rep9 py    threads   w= 2 wall=0.91s speedup=0.96x load=9.1
+rep9 py    threads   w= 4 wall=0.91s speedup=0.97x load=9.1
+rep9 py    threads   w= 8 wall=0.91s speedup=0.96x load=9.1
+rep9 py    threads   w=16 wall=0.92s speedup=0.95x load=8.9
+rep9 py    processes w= 1 wall=0.90s speedup=0.97x load=8.9
+rep9 py    processes w= 2 wall=0.45s speedup=1.95x load=8.9
+rep9 py    processes w= 4 wall=0.23s speedup=3.76x load=8.9
+rep9 py    processes w= 8 wall=0.12s speedup=7.34x load=8.9
+rep9 py    processes w=16 wall=0.08s speedup=10.89x load=8.9
+rep9 hash  threads   w= 1 wall=1.07s speedup=0.98x load=8.9
+rep9 hash  threads   w= 2 wall=0.56s speedup=1.89x load=9.6
+rep9 hash  threads   w= 4 wall=0.28s speedup=3.74x load=9.6
+rep9 hash  threads   w= 8 wall=0.14s speedup=7.40x load=9.6
+rep9 hash  threads   w=16 wall=0.07s speedup=14.53x load=9.6
+rep9 hash  processes w= 1 wall=1.09s speedup=0.96x load=9.6
+rep9 hash  processes w= 2 wall=0.57s speedup=1.84x load=9.6
+rep9 hash  processes w= 4 wall=0.29s speedup=3.67x load=9.6
+rep9 hash  processes w= 8 wall=0.14s speedup=7.45x load=9.6
+rep9 hash  processes w=16 wall=0.09s speedup=12.32x load=9.6
+rep9 io    threads   w= 1 wall=4.03s speedup=1.00x load=9.3
+rep9 io    threads   w= 2 wall=2.02s speedup=1.99x load=9.3
+rep9 io    threads   w= 4 wall=1.01s speedup=3.99x load=9.3
+rep9 io    threads   w= 8 wall=0.51s speedup=7.95x load=9.3
+rep9 io    threads   w=16 wall=0.26s speedup=15.23x load=9.1
+rep9 io    processes w= 1 wall=4.02s speedup=1.00x load=9.1
+rep9 io    processes w= 2 wall=2.01s speedup=2.00x load=8.8
+rep9 io    processes w= 4 wall=1.01s speedup=3.99x load=8.8
+rep9 io    processes w= 8 wall=0.50s speedup=7.96x load=8.8
+rep9 io    processes w=16 wall=0.26s speedup=15.27x load=8.8
+rep9 numpy threads   w= 1 wall=0.26s speedup=1.25x load=8.8
+rep9 numpy threads   w= 2 wall=0.13s speedup=2.53x load=8.8
+rep9 numpy threads   w= 4 wall=0.07s speedup=4.93x load=8.8
+rep9 numpy threads   w= 8 wall=0.04s speedup=8.47x load=8.8
+rep9 numpy threads   w=16 wall=0.03s speedup=10.98x load=8.8
+rep9 numpy processes w= 1 wall=0.34s speedup=0.96x load=8.8
+rep9 numpy processes w= 2 wall=0.17s speedup=1.89x load=8.8
+rep9 numpy processes w= 4 wall=0.09s speedup=3.56x load=8.8
+rep9 numpy processes w= 8 wall=0.05s speedup=6.73x load=8.8
+rep9 numpy processes w=16 wall=0.03s speedup=12.50x load=8.8
+ok results/gil.json {'python': '3.12.3', 'gil_enabled': True, 'free_threaded_build': False, 'cpus': 48, 'units': 200, 'load_start': (13.47119140625, 12.4736328125, 16.359375)}

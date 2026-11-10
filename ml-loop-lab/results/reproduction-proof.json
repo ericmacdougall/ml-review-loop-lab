@@ -1,0 +1,14 @@
+{
+  "command": "LAB_DATA=/home/eric/lab-l/ml-loop-lab/data_qg bash run_ml.sh",
+  "completed": true,
+  "same_original_test_images": true,
+  "independent_confirmation": false,
+  "n_images": 3000,
+  "n_seeds": 20,
+  "all_primary_results_identical": true,
+  "primary": {
+    "diff": 0.019651993658413525,
+    "lo": 0.01473143959896609,
+    "hi": 0.025470121464987873
+  }
+}

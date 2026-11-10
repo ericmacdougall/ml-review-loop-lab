@@ -1,0 +1,404 @@
+{
+ "meta": {
+  "lines": 1000000,
+  "file_mb": 108.669652,
+  "python": "3.12.3",
+  "load_start": [
+   10.05322265625,
+   11.84228515625,
+   15.73193359375
+  ]
+ },
+ "runs": [
+  {
+   "secs": 2.9893322660354897,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 0,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.838369684002828,
+   "rss_mb": 21.75,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 0,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.857060992042534,
+   "rss_mb": 21.75,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 0,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.758469985798,
+   "rep": 0
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 829.2140800040215,
+   "rep": 0
+  },
+  {
+   "secs": 2.8294089369592257,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 1,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.714642032980919,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 1,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.775923788023647,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 1,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.4311049785465,
+   "rep": 1
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 827.6293289964087,
+   "rep": 1
+  },
+  {
+   "secs": 2.884688341000583,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 2,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.6310368399717845,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 2,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.8270893219741993,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 2,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 23.006923962384462,
+   "rep": 2
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 834.6857720171101,
+   "rep": 2
+  },
+  {
+   "secs": 3.0096705369651318,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 3,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.6893982230103575,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 3,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.730569960025605,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 3,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.527866018004715,
+   "rep": 3
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 832.5298330164514,
+   "rep": 3
+  },
+  {
+   "secs": 3.0077008429798298,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 4,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.780795993981883,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 4,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.808472223987337,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 4,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 22.651469975244254,
+   "rep": 4
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 830.1932209869847,
+   "rep": 4
+  },
+  {
+   "secs": 3.065030962054152,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 5,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.7242902370053343,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 5,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.6751834980095737,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 5,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.571056044194847,
+   "rep": 5
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 829.9408049788326,
+   "rep": 5
+  },
+  {
+   "secs": 3.020773553987965,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 6,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.7422843009699136,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 6,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.668367034988478,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 6,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 22.52361795399338,
+   "rep": 6
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 829.0003510192037,
+   "rep": 6
+  },
+  {
+   "secs": 2.9624168149894103,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 7,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.7170187309966423,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 7,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.762190626002848,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 7,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 22.332065040245652,
+   "rep": 7
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 831.1975859687664,
+   "rep": 7
+  },
+  {
+   "secs": 2.9423548889462836,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 8,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.641354609047994,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 8,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.796722604020033,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 8,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.90200099721551,
+   "rep": 8
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 825.1351790386252,
+   "rep": 8
+  },
+  {
+   "secs": 2.913890048977919,
+   "rss_mb": 654.0,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "list",
+   "rep": 9,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.6984746560337953,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "gen",
+   "rep": 9,
+   "kind": "mem"
+  },
+  {
+   "secs": 2.7650569960242137,
+   "rss_mb": 34.875,
+   "tenants": 500,
+   "total": 497995554,
+   "mode": "batched",
+   "rep": 9,
+   "kind": "mem"
+  },
+  {
+   "kind": "ttft",
+   "mode": "stream",
+   "ttft_ms": 21.191130974330008,
+   "rep": 9
+  },
+  {
+   "kind": "ttft",
+   "mode": "buffered",
+   "ttft_ms": 816.4778289501555,
+   "rep": 9
+  }
+ ]
+}

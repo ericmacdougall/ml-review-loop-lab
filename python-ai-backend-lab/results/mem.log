@@ -1,0 +1,51 @@
+rep0 list     2.99s rss=654MB
+rep0 gen      2.84s rss=22MB
+rep0 batched  2.86s rss=22MB
+rep0 ttft stream 22 ms
+rep0 ttft buffered 829 ms
+rep1 list     2.83s rss=654MB
+rep1 gen      2.71s rss=35MB
+rep1 batched  2.78s rss=35MB
+rep1 ttft stream 21 ms
+rep1 ttft buffered 828 ms
+rep2 list     2.88s rss=654MB
+rep2 gen      2.63s rss=35MB
+rep2 batched  2.83s rss=35MB
+rep2 ttft stream 23 ms
+rep2 ttft buffered 835 ms
+rep3 list     3.01s rss=654MB
+rep3 gen      2.69s rss=35MB
+rep3 batched  2.73s rss=35MB
+rep3 ttft stream 22 ms
+rep3 ttft buffered 833 ms
+rep4 list     3.01s rss=654MB
+rep4 gen      2.78s rss=35MB
+rep4 batched  2.81s rss=35MB
+rep4 ttft stream 23 ms
+rep4 ttft buffered 830 ms
+rep5 list     3.07s rss=654MB
+rep5 gen      2.72s rss=35MB
+rep5 batched  2.68s rss=35MB
+rep5 ttft stream 22 ms
+rep5 ttft buffered 830 ms
+rep6 list     3.02s rss=654MB
+rep6 gen      2.74s rss=35MB
+rep6 batched  2.67s rss=35MB
+rep6 ttft stream 23 ms
+rep6 ttft buffered 829 ms
+rep7 list     2.96s rss=654MB
+rep7 gen      2.72s rss=35MB
+rep7 batched  2.76s rss=35MB
+rep7 ttft stream 22 ms
+rep7 ttft buffered 831 ms
+rep8 list     2.94s rss=654MB
+rep8 gen      2.64s rss=35MB
+rep8 batched  2.80s rss=35MB
+rep8 ttft stream 22 ms
+rep8 ttft buffered 825 ms
+rep9 list     2.91s rss=654MB
+rep9 gen      2.70s rss=35MB
+rep9 batched  2.77s rss=35MB
+rep9 ttft stream 21 ms
+rep9 ttft buffered 816 ms
+ok

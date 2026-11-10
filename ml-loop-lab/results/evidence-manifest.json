@@ -1,0 +1,12 @@
+{
+  "original_prediction_sha256": "32c6dac4f3b8dfa5a709a6bc879accead9c4e070b025eb538d6d1f56590e5445",
+  "original_prediction_lines": 300,
+  "frozen_source_commit": "d50ac317877f056103ca4257b1e719c530d95d5e",
+  "normalization": "Non-finite values and empty-set precision become null only in public JSON. Original raw evidence is preserved unchanged.",
+  "artifacts": {
+    "public/peek-demo.json": "606cc18cf135cf5168006d08e735471d92190675144f9db40ebb67c6d24bd37c",
+    "public/signals.json": "d15cb6a09ef7ea88cd2674bfb724d3def28971b7a619874818154ff518d00cd3",
+    "public/summary.json": "329e01066457f8bd928646094c54658581449540608df7c700536401fbd568dc",
+    "raw-final.jsonl.gz": "5c35ac7bcea40b332a3d9de5d71ddbe1f28af676cddc77e5578d62d10a076f53"
+  }
+}

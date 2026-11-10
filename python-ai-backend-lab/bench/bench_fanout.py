@@ -33,6 +33,7 @@ async def run_async(n, conc):
             async with sem:
                 t = time.perf_counter()
                 async with s.post(f"http://{HOST}:{PORT}/v1/complete", data=BODY) as r:
+                    r.raise_for_status()
                     await r.read()
                 lat.append(time.perf_counter() - t)
         await asyncio.gather(*[one() for _ in range(n)])
@@ -48,7 +49,10 @@ def _sync_call():
         c = _local.c = http.client.HTTPConnection(HOST, PORT)
     t = time.perf_counter()
     c.request("POST", "/v1/complete", BODY)
-    c.getresponse().read()
+    response = c.getresponse()
+    if response.status != 200:
+        raise RuntimeError(f"HTTP failure: {response.status}")
+    response.read()
     return time.perf_counter() - t
 
 
@@ -63,7 +67,10 @@ def _proc_chunk(k):
     for _ in range(k):
         t = time.perf_counter()
         c.request("POST", "/v1/complete", BODY)
-        c.getresponse().read()
+        response = c.getresponse()
+        if response.status != 200:
+            raise RuntimeError(f"HTTP failure: {response.status}")
+        response.read()
         out.append(time.perf_counter() - t)
     return out
 

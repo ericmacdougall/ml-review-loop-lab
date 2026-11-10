@@ -60,7 +60,9 @@ if __name__ == "__main__":
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     out = []
-    with tempfile.TemporaryDirectory() as td:
+    scratch = HERE.parent / "data"
+    scratch.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(dir=scratch) as td:
         td = pathlib.Path(td)
         (td / "pyrightconfig.json").write_text('{"typeCheckingMode": "strict", "reportMissingImports": false}')
         shutil.copy(BASE / "test_gateway.py", td)
